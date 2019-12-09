@@ -225,6 +225,7 @@
     <object>objects\obj_menulucas</object>
     <object>objects\obj_fadein</object>
     <object>objects\obj_fadeout</object>
+    <object>objects\obj_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
