@@ -137,7 +137,6 @@
     <object>objects\obj_fbsysinfo</object>
     <object>objects\obj_omniqube</object>
     <object>objects\obj_sun</object>
-    <object>objects\obj_test</object>
     <object>objects\obj_moon</object>
     <object>objects\obj_time</object>
     <object>objects\obj_citybackground</object>
