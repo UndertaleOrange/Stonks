@@ -23,7 +23,7 @@ instance_create(172,143,obj_settings);
 instance_create(172,169,obj_controls);
 instance_create(207,197,obj_exit);
 
-
+//daco
 if (global.mapesc == "true") {
 
 //zapne sa nova hra, ak uz je save, spyta sa ta ci si si isty

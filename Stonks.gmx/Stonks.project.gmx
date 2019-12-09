@@ -138,6 +138,7 @@
     <sprite>sprites\spr_mapstonks</sprite>
     <sprite>sprites\spr_mapstonksdemo</sprite>
     <sprite>sprites\Black</sprite>
+    <sprite>sprites\spr_mappoint</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -242,6 +243,7 @@
     <object>objects\obj_menulucas</object>
     <object>objects\obj_fadein</object>
     <object>objects\obj_fadeout</object>
+    <object>objects\obj_mappoint</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
