@@ -230,6 +230,7 @@
     <object>objects\obj_fadeout</object>
     <object>objects\obj_mappoint</object>
     <object>objects\obj_mapstonks</object>
+    <object>objects\obj_testmerge1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
