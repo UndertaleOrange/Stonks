@@ -140,7 +140,9 @@
     <sprite>sprites\Black</sprite>
     <sprite>sprites\spr_mappoint</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_map</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\path_menu</path>
   </paths>
@@ -244,6 +246,7 @@
     <object>objects\obj_fadein</object>
     <object>objects\obj_fadeout</object>
     <object>objects\obj_mappoint</object>
+    <object>objects\obj_mapstonks</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
