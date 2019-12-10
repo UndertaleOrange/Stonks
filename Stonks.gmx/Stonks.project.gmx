@@ -136,7 +136,6 @@
     <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_testmerge2</object>
     <object>objects\obj_testfadeout</object>
     <object>objects\obj_fbsysinfo</object>
     <object>objects\obj_omniqube</object>
@@ -230,7 +229,6 @@
     <object>objects\obj_fadeout</object>
     <object>objects\obj_mappoint</object>
     <object>objects\obj_mapstonks</object>
-    <object>objects\obj_testmerge1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
