@@ -136,6 +136,7 @@
     <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_testmerge2</object>
     <object>objects\obj_testfadeout</object>
     <object>objects\obj_fbsysinfo</object>
     <object>objects\obj_omniqube</object>
