@@ -229,6 +229,9 @@
     <object>objects\obj_fadeout</object>
     <object>objects\obj_mappoint</object>
     <object>objects\obj_mapstonks</object>
+    <objects name="UI">
+      <object>objects\obj_renderui</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
