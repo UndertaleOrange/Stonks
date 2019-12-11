@@ -31,7 +31,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="64">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
+            <string>draw_self();
+if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 if mouse_check_button(mb_left){
 if mouse_x &gt;= x+sprite_width-2{
 koniec = x+sprite_width-2
@@ -69,30 +70,6 @@ else{
 draw_set_color(c_black);
 }
 draw_rectangle(x+1,y+1,koniec,y+8,false)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_self();
-
 </string>
           </argument>
         </arguments>

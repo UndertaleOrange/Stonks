@@ -52,7 +52,7 @@ image_alpha = 0;
             <kind>1</kind>
             <string>image_alpha += 0.05;
 if image_alpha &gt;= 1{
-room_goto(obj_fbsysinfo.faderoom);
+room_goto(obj_varstash.faderoom);
 }
 </string>
           </argument>

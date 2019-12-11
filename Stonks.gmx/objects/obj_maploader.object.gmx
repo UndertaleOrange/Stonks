@@ -99,8 +99,11 @@
           <argument>
             <kind>1</kind>
             <string>global.mapesc = "true";
-obj_fbsysinfo.faderoom = room_menu
+obj_varstash.faderoom = room_menu
 instance_create(0,0,obj_fadeout)
+if instance_exists(obj_varstash){
+obj_varstash.inmaptutorial = 1
+}
 </string>
           </argument>
         </arguments>

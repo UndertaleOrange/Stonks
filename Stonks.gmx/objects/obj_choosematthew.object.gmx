@@ -54,7 +54,8 @@ if mouse_check_button_pressed(mb_left){
 if !instance_exists(obj_fadeout){
 instance_create(0, 0, obj_fadeout)
 }
-obj_fbsysinfo.faderoom = room_map;
+obj_varstash.tutorial = 1
+obj_varstash.faderoom = room_map;
 }
 image_alpha = 1
 }

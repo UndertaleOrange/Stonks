@@ -100,6 +100,9 @@ key = ds_map_find_next(M_FBSYSINFO_OSMAP, key);
             <string>// Global first variable setup
 global.mapesc = "false";
 faderoom = room_menu
+//map vars
+tutorial = 0;
+inmaptutorial = 0;
 </string>
           </argument>
         </arguments>
