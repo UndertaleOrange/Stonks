@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-animation = random_range(45,180)
+animation = random_range(30,150)
 a = 0;
 b = 0;
 </string>
@@ -52,15 +52,21 @@ b = 0;
           <argument>
             <kind>1</kind>
             <string>a++;
-if a  &gt;= animation{
+if a &gt;= animation{
+if b = 0{
+sprite_index = choose(spr_matthew,spr_matej2,spr_matej3);
+b = 1
+}
+}
+if a &gt;= animation{
 image_speed = 0.1
-b++
-if b &gt;= 45{
-image_index = 0;
-image_speed = 0;
-b = 0;
+if image_index = image_number{
+sprite_index = spr_matthew
+image_speed = 0
+image_index = 0
+animation = random_range(30,150)
 a = 0;
-animation = choose(45,180);
+b = 0;
 }
 }
 </string>

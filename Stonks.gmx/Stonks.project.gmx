@@ -103,11 +103,6 @@
     <sprite>sprites\spr_menuborderright</sprite>
     <sprite>sprites\spr_bigmenu</sprite>
     <sprite>sprites\spr_chooseshader</sprite>
-    <sprite>sprites\spr_frederick</sprite>
-    <sprite>sprites\spr_matthew</sprite>
-    <sprite>sprites\spr_lucas</sprite>
-    <sprite>sprites\spr_ladislav</sprite>
-    <sprite>sprites\spr_marek</sprite>
     <sprite>sprites\spr_mobileinplaylist</sprite>
     <sprite>sprites\spr_mobileinauthor</sprite>
     <sprite>sprites\spr_mobilehome</sprite>
@@ -122,6 +117,21 @@
     <sprite>sprites\spr_mappoint</sprite>
     <sprite>sprites\spr_mapshader</sprite>
     <sprite>sprites\spr_tutorialshader</sprite>
+    <sprite>sprites\spr_frederick</sprite>
+    <sprite>sprites\spr_marek</sprite>
+    <sprite>sprites\spr_matthew</sprite>
+    <sprite>sprites\spr_ladislav</sprite>
+    <sprite>sprites\spr_lucas</sprite>
+    <sprite>sprites\spr_frederik2</sprite>
+    <sprite>sprites\spr_marek2</sprite>
+    <sprite>sprites\spr_matej2</sprite>
+    <sprite>sprites\spr_laco2</sprite>
+    <sprite>sprites\spr_lukas2</sprite>
+    <sprite>sprites\spr_frederik3</sprite>
+    <sprite>sprites\spr_marek3</sprite>
+    <sprite>sprites\spr_matej3</sprite>
+    <sprite>sprites\spr_laco3</sprite>
+    <sprite>sprites\spr_lukas3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
