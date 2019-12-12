@@ -228,19 +228,15 @@
     <object>objects\obj_menulucas</object>
     <object>objects\obj_fadein</object>
     <object>objects\obj_fadeout</object>
-<<<<<<< HEAD
     <object>objects\obj_tutorialmappoint</object>
     <object>objects\obj_testmerge1</object>
     <object>objects\obj_maptotalshader</object>
     <object>objects\obj_mapcontroller</object>
     <object>objects\obj_tutorialshader</object>
-=======
-    <object>objects\obj_mappoint</object>
     <object>objects\obj_mapstonks</object>
     <objects name="UI">
       <object>objects\obj_renderui</object>
     </objects>
->>>>>>> e823ec383d9bc96c1cdcb7a73d42f2d79aa6d83c
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
