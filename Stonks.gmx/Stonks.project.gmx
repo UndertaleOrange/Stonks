@@ -132,6 +132,7 @@
     <sprite>sprites\spr_matej3</sprite>
     <sprite>sprites\spr_laco3</sprite>
     <sprite>sprites\spr_lukas3</sprite>
+    <sprite>sprites\spr_menugui</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -247,6 +248,7 @@
     <objects name="UI">
       <object>objects\obj_renderui</object>
     </objects>
+    <object>objects\obj_menugui</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
