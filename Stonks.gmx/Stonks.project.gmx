@@ -8,6 +8,7 @@
     <extension index="0">extensions\Borderless Windowed</extension>
   </NewExtensions>
   <sounds name="sound">
+    <sound>sound\snd_sfx_rain</sound>
     <sound>sound\snd_logo</sound>
   </sounds>
   <sprites name="sprites">

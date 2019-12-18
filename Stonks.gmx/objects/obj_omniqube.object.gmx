@@ -25,6 +25,78 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>// FlatBlade System Information Diagnostics Tool
+
+if debug_mode {exit}
+gml_release_mode(true);
+
+/* Windows NT System Variables
+M_FBSYSINFO_USERNAME = environment_get_variable(USERNAME);
+M_FBSYSINFO_SYSDRIVE = environment_get_variable(SystemDrive);
+global.M_FBSYSINFO_TEMP = environment_get_variable(TEMP);
+global.M_FBSYSINFO_APPDATA = environment_get_variable(AppData);
+M_FBSYSINFO_OS = environment_get_variable(OS);
+
+if M_FBSYSINFO_OS != Windows_NT {exit}
+*/
+
+M_FBSYSINFO_GAME_BUILD = GM_build_date;
+M_FBSYSINFO_GAME_VERSION = GM_version;
+M_FBSYSINFO_GAME_PARAM = parameter_count();
+global.M_FBSYSINFO_GAME_WORKDIR = working_directory;
+global.M_FBSYSINFO_GAME_PROGDIR = program_directory;
+global.M_FBSYSINFO_GAME_GMTEMP = temp_directory;
+
+if M_FBSYSINFO_GAME_PARAM &gt; 0 {var i 
+for (i = 0; i &lt; M_FBSYSINFO_GAME_PARAM; i += 1) {M_FBSYSINFO_PARAM_ARRAY[i] = parameter_string(i + 1)}}
+if os_browser != browser_not_a_browser {game_end()}
+
+global.M_FBSYSINFO_DEVICE = os_device;
+global.M_FBSYSINFO_CONFIG = os_get_config();
+global.M_FBSYSINFO_LANGUAGE = os_get_language();
+M_FBSYSINFO_LANGUAGE_REGION = os_get_region();
+global.M_FBSYSINFO_INTERNET = os_is_network_connected();
+global.M_FBSYSINFO_PAUSE = os_is_paused();
+global.M_FBSYSINFO_DEVICETYPE = os_type;
+global.M_FBSYSINFO_OSCODE = os_version;
+
+/* Mobile orientation lock
+if M_FBSYSINFO_DEVICETYPE == os_android || M_FBSYSINFO_DEVICETYPE == os_ios {os_powersave_enable(false) 
+os_lock_orientation(true)}
+*/
+
+/* Advanced OSMAP
+M_FBSYSINFO_OSMAP = os_get_info();
+if M_FBSYSINFO_OSMAP != -1 {
+var size, key, j;
+size = ds_map_size(M_FBSYSINFO_OSMAP);
+key = ds_map_find_first(M_FBSYSINFO_OSMAP);
+for (j=0; j &lt; size - 1; i++;) {
+M_FBSYSINFO_OSMAP_DATA[j] = ds_map_find_value(M_FBSYSINFO_OSMAP, key);
+key = ds_map_find_next(M_FBSYSINFO_OSMAP, key);
+}
+} else {game_end()}
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>seconds = 0;
 image_speed = .35
 audio_play_sound(snd_logo,10,false);
