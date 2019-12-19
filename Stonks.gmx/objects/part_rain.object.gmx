@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -29,7 +29,7 @@
 // Non-controller Implementation
 
 partRain_sys = part_system_create();
-part_rain.startRain = false;
+
 // Define Particle: Rain
 partRain = part_type_create();
 part_type_shape(partRain,pt_shape_line);
@@ -42,6 +42,7 @@ part_type_direction(partRain,250,330,0,1);
 part_type_orientation(partRain,290,209,0,0,0);
 part_type_life(partRain,20,180);
 
+/*
 // Define Particle: Puddle
 partPuddle = part_type_create();
 part_type_shape(partPuddle,pt_shape_circle);
@@ -56,6 +57,8 @@ part_type_life(partPuddle,50,60);
 
 // Define Sequence
 part_type_death(partRain,1,partPuddle);
+
+*/
 
 // Define Emitter
 partRain_emit = part_emitter_create(partRain_sys);
@@ -72,8 +75,8 @@ ps_distr_linear
 part_emitter_stream(partRain_sys,partRain_emit,partRain,5);
 
 // Define System Advance (Warning!)
-if (startRain == true) {repeat (room_speed * 3) {part_system_update(partRain_sys);}} else {}
-global.startRain = false;
+if (global.weather_startRain == true) {repeat (room_speed * 3) {part_system_update(partRain_sys);}} else {}
+global.weather_startRain = false;
 </string>
           </argument>
         </arguments>

@@ -108,7 +108,6 @@ global.mapesc = "false";
     <instance objName="obj_planespawner" x="90" y="12" name="inst_35787F4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mainmenu" x="160" y="48" name="inst_FBB346F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fadein" x="0" y="0" name="inst_195C8EB4" locked="0" code="if (global.mapesc == &quot;true&quot;) {&#xA;instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="part_rain" x="376" y="48" name="inst_E2A9A1E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

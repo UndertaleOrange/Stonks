@@ -151,12 +151,16 @@
     <font>fonts\font2</font>
     <font>fonts\font3</font>
     <font>fonts\font4</font>
+    <font>fonts\font6</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
       <object>objects\part_rain</object>
     </objects>
-    <object>objects\HOSTCONSOLE</object>
+    <objects name="Console">
+      <object>objects\CONRESTART</object>
+      <object>objects\HOSTCONSOLE</object>
+    </objects>
     <object>objects\obj_testfadeout</object>
     <object>objects\obj_varstash</object>
     <object>objects\obj_omniqube</object>
