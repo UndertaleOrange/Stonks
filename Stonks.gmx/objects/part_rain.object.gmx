@@ -29,7 +29,7 @@
 // Non-controller Implementation
 
 partRain_sys = part_system_create();
-
+part_rain.startRain = false;
 // Define Particle: Rain
 partRain = part_type_create();
 part_type_shape(partRain,pt_shape_line);
