@@ -145,15 +145,18 @@
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
   <fonts name="fonts">
+    <font>fonts\font5</font>
     <font>fonts\font0</font>
     <font>fonts\font1</font>
     <font>fonts\font2</font>
     <font>fonts\font3</font>
+    <font>fonts\font4</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
       <object>objects\part_rain</object>
     </objects>
+    <object>objects\HOSTCONSOLE</object>
     <object>objects\obj_testfadeout</object>
     <object>objects\obj_varstash</object>
     <object>objects\obj_omniqube</object>

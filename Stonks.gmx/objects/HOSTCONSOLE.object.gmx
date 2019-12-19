@@ -25,102 +25,74 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// GameMaker Particle System - Rain Physics
-// Non-controller Implementation
+            <string>// Developer Console Window Host
 
-partRain_sys = part_system_create();
-
-// Define Particle: Rain
-partRain = part_type_create();
-part_type_shape(partRain,pt_shape_line);
-part_type_size(partRain,0.2,0.3,0,0);
-part_type_color2(partRain,c_teal,c_white);
-part_type_alpha2(partRain,.5,.1);
-part_type_gravity(partRain,0.1,290); // Define Gravity
-part_type_speed(partRain,0.5,0.5,0,0);
-part_type_direction(partRain,250,330,0,1);
-part_type_orientation(partRain,290,209,0,0,0);
-part_type_life(partRain,20,180);
-
-// Define Particle: Puddle
-partPuddle = part_type_create();
-part_type_shape(partPuddle,pt_shape_circle);
-part_type_size(partPuddle,0.5,0.8,.01,0);
-part_type_scale(partPuddle,.5,.1);
-part_type_color1(partPuddle,c_silver);
-part_type_alpha2(partPuddle,.4,0);
-part_type_speed(partPuddle,0,0,0,0);
-part_type_direction(partPuddle,0,0,0,0);
-part_type_gravity(partPuddle,0,270);
-part_type_life(partPuddle,50,60);
-
-// Define Sequence
-part_type_death(partRain,1,partPuddle);
-
-// Define Emitter
-partRain_emit = part_emitter_create(partRain_sys);
-part_emitter_region(
-partRain_sys,
-partRain_emit,
-view_xview[0]-400,
-view_wview[0],
-view_yview[0]-100,
-view_yview[0]-100,
-ps_shape_line,
-ps_distr_linear
-);
-part_emitter_stream(partRain_sys,partRain_emit,partRain,5);
-
-// Define System Advance (Warning!)
-if (global.startRain == true) {repeat (room_speed * 3) {part_system_update(partRain_sys);}} else {}
-global.startRain = false;
+// Log setup
+log = "";
+logA[0] = log;
+max_logs = 5;
+for (i = max_logs-1; i &gt; 0; i--) {logA[i] = "";}
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>snd_sfx_rain</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>// Push message
+if (log !="") { for (i=max_logs-1; i &gt;0; i--) {logA[i] = logA[i-1]} // Move
+logA[0] = log; // Index 1
+log = "";
+}
+</string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="1" enumb="0">
+    <event eventtype="9" enumb="112">
       <action>
         <libid>1</libid>
-        <id>213</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_sound</functionname>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>snd_sfx_rain</sound>
+            <kind>1</kind>
+            <string>// 480x270
+
+// Display log
+display_set_gui_size(480,270);
+
+// Functions
+draw_set_halign(fa_right);
+draw_set_valign(fa_top);
+// OG: Roboto 14pt
+draw_set_font(font5); // Lucida Console 10pt
+
+</string>
           </argument>
         </arguments>
       </action>
