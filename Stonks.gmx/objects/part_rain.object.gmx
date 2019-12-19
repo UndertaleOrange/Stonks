@@ -72,7 +72,7 @@ ps_distr_linear
 part_emitter_stream(partRain_sys,partRain_emit,partRain,5);
 
 // Define System Advance (Warning!)
-if (global.startRain == true) {repeat (room_speed * 3) {part_system_update(partRain_sys);}} else {}
+if (startRain == true) {repeat (room_speed * 3) {part_system_update(partRain_sys);}} else {}
 global.startRain = false;
 </string>
           </argument>
