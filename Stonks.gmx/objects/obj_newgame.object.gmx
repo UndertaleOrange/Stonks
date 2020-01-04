@@ -52,7 +52,7 @@
             <kind>1</kind>
             <string>if obj_mainmenu.shade = 1{
 if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
-if mouse_check_button_pressed(mb_left){
+if mouse_check_button_pressed(mb_left) &amp;&amp; obj_mainmenu.wait &gt; 1{
 //zapne sa nova hra, ak uz je save, spyta sa ta ci si si isty
 obj_menuskip.skip = 1;
 with obj_mainmenu{

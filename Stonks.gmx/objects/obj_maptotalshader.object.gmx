@@ -53,6 +53,7 @@ if seconds = 30{
 if obj_varstash.tutorial = 1 &amp;&amp; obj_varstash.inmaptutorial = 0{
 instance_create(0,0,obj_tutorialshader);
 instance_create(720,504,obj_tutorialmappoint);
+obj_varstash.mappoint = 0;
 }
 }
 if seconds &gt; 30{

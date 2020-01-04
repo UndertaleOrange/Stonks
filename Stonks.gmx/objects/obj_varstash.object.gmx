@@ -31,6 +31,9 @@ faderoom = room_menu
 //map vars
 tutorial = 0;
 inmaptutorial = 0;
+mappoint = 0;
+//tento variabilny bude ukazovat na ktorom mappointe sme, jedno cislo = jedna lokacia
+//napr. 0 = tutorial
 </string>
           </argument>
         </arguments>

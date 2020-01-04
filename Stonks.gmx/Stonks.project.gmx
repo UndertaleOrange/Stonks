@@ -134,6 +134,8 @@
     <sprite>sprites\spr_laco3</sprite>
     <sprite>sprites\spr_lukas3</sprite>
     <sprite>sprites\spr_menugui</sprite>
+    <sprite>sprites\spr_tutorialmapimage</sprite>
+    <sprite>sprites\spr_tutorialback</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -152,6 +154,7 @@
     <font>fonts\font3</font>
     <font>fonts\font4</font>
     <font>fonts\font6</font>
+    <font>fonts\Minecraftia</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -262,12 +265,14 @@
       <object>objects\obj_renderui</object>
     </objects>
     <object>objects\obj_menugui</object>
+    <object>objects\obj_tutorialback</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
     <room>rooms\room_menu</room>
     <room>rooms\rm_test</room>
     <room>rooms\room_map</room>
+    <room>rooms\room_tutorial</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

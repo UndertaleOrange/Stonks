@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 0.15
 image_alpha = 0
+place = 0
+tutorial = 0;
 </string>
           </argument>
         </arguments>
@@ -51,13 +53,28 @@ image_alpha = 0
             <kind>1</kind>
             <string>if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 image_speed = 0
-instance_create(x-144,y-15,obj_menugui);
+if !instance_exists(obj_menugui) and image_alpha &gt;= 1{
+instance_create(x-144,y-15-128,obj_menugui);
+if instance_exists(obj_varstash){
+obj_varstash.mappoint = place
+}
+}
+if mouse_check_button_pressed(mb_left) and image_alpha &gt;= 1{
+tutorial = 1;
+}
 }
 else{
 image_speed = 0.15
+if instance_exists(obj_menugui){
+obj_menugui.destroy = 1;
+}
 }
 if image_alpha &lt; 1{
 image_alpha += 0.01
+}
+if tutorial = 1{
+instance_create(0,0,obj_fadeout);
+obj_varstash.faderoom = room_tutorial;
 }
 </string>
           </argument>
