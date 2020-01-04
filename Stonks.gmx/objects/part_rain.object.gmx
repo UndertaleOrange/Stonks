@@ -32,8 +32,8 @@ partRain_sys = part_system_create();
 
 // Define Particle: Rain
 partRain = part_type_create();
-part_system_depth(partRain, 1 );
-part_system_depth(partRain_sys, 1 );
+part_system_depth(partRain, 2 );
+part_system_depth(partRain_sys, 2 );
 part_type_shape(partRain,pt_shape_line);
 part_type_size(partRain,0.2,0.3,0,0);
 part_type_color2(partRain,c_teal,c_white);
@@ -64,13 +64,14 @@ part_type_death(partRain,1,partPuddle);
 
 // Define Emitter
 partRain_emit = part_emitter_create(partRain_sys);
+
 part_emitter_region(
 partRain_sys,
 partRain_emit,
-view_xview[0]-400,
-view_wview[0],
-view_yview[0]-100,
-view_yview[0]-100,
+0,
+room_width,
+0,
+0,
 ps_shape_line,
 ps_distr_linear
 );
