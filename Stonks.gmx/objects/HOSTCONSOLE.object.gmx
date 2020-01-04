@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -81,14 +81,12 @@ log = "";
           <argument>
             <kind>1</kind>
             <string>if (console_displayed = true) {if keyboard_check_pressed(vk_f12) {
-instance_create(CONRESTART, 0, 0);
+instance_create(0, 0, CONRESTART);
 } else {}} else {}
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="9" enumb="123">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -105,8 +103,12 @@ instance_create(CONRESTART, 0, 0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Display log
-display_set_gui_size(480,270);
+            <string>if (console_displayed = false) {if keyboard_check_pressed(vk_f12) {
+
+
+
+// Display log
+display_set_gui_size(-1,-1);
 console_displayed = true;
 
 // Functions
@@ -130,6 +132,10 @@ draw_text(0,64,logA[0]);
 draw_set_halign(fa_middle);
 draw_set_valign(fa_middle);
 draw_set_color(c_black);
+
+
+
+} else {}} else {}
 </string>
           </argument>
         </arguments>
