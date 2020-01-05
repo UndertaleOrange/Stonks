@@ -137,7 +137,9 @@
     <sprite>sprites\spr_tutorialmapimage</sprite>
     <sprite>sprites\spr_tutorialback</sprite>
     <sprite>sprites\spr_matthewsleeping</sprite>
+    <sprite>sprites\spr_tutorialchair</sprite>
     <sprite>sprites\spr_Z</sprite>
+    <sprite>sprites\spr_screenmessage</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -270,6 +272,10 @@
     <object>objects\obj_tutorialback</object>
     <object>objects\obj_matthewsleeping</object>
     <object>objects\obj_Z</object>
+    <object>objects\obj_screenmessage</object>
+    <object>objects\obj_matthewcamera</object>
+    <object>objects\obj_tutorialchair</object>
+    <object>objects\obj_matthew</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>

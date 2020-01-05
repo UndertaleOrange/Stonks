@@ -59,7 +59,7 @@ if instance_exists(obj_varstash){
 obj_varstash.mappoint = place
 }
 }
-if mouse_check_button_pressed(mb_left) and image_alpha &gt;= 1{
+if mouse_check_button_pressed(mb_left) and image_alpha = 1{
 tutorial = 1;
 }
 }
