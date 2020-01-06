@@ -140,6 +140,11 @@
     <sprite>sprites\spr_tutorialchair</sprite>
     <sprite>sprites\spr_Z</sprite>
     <sprite>sprites\spr_screenmessage</sprite>
+    <sprite>sprites\spr_solid</sprite>
+    <sprite>sprites\spr_solidrect_lt</sprite>
+    <sprite>sprites\spr_solidrect_rt</sprite>
+    <sprite>sprites\spr_solidrect_lb</sprite>
+    <sprite>sprites\spr_solidrect_rb</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -276,6 +281,11 @@
     <object>objects\obj_matthewcamera</object>
     <object>objects\obj_tutorialchair</object>
     <object>objects\obj_matthew</object>
+    <object>objects\obj_solid</object>
+    <object>objects\obj_solidrect_lt</object>
+    <object>objects\obj_solidrect_rt</object>
+    <object>objects\obj_solidrect_lb</object>
+    <object>objects\obj_solidrect_rb</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>

@@ -56,6 +56,8 @@ instance_create(0,0,obj_matthewcamera);</code>
   <instances>
     <instance objName="obj_tutorialback" x="0" y="0" name="inst_7D2C0077" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_matthewsleeping" x="790" y="80" name="inst_DA58E236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solid" x="-32" y="150" name="inst_0C3E77B3" locked="0" code="depth = -2" scaleX="1" scaleY="4.40625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_solidrect_rt" x="1177" y="191" name="inst_C2DE5802" locked="0" code="depth = -2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
