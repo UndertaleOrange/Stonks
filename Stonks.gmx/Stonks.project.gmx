@@ -60,6 +60,8 @@
     <sprite>sprites\spr_star7</sprite>
     <sprite>sprites\spr_star8</sprite>
     <sprite>sprites\spr_cursor</sprite>
+    <sprite>sprites\spr_cursorInPc</sprite>
+    <sprite>sprites\spr_computercursor</sprite>
     <sprite>sprites\spr_plane2</sprite>
     <sprite>sprites\spr_plane2shader</sprite>
     <sprite>sprites\spr_plane</sprite>
@@ -145,6 +147,7 @@
     <sprite>sprites\spr_solidrect_rt</sprite>
     <sprite>sprites\spr_solidrect_lb</sprite>
     <sprite>sprites\spr_solidrect_rb</sprite>
+    <sprite>sprites\spr_computerarea</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -286,6 +289,7 @@
     <object>objects\obj_solidrect_rt</object>
     <object>objects\obj_solidrect_lb</object>
     <object>objects\obj_solidrect_rb</object>
+    <object>objects\obj_computerarea</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
@@ -293,6 +297,7 @@
     <room>rooms\rm_test</room>
     <room>rooms\room_map</room>
     <room>rooms\room_tutorial</room>
+    <room>rooms\room_tutorialpc</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-2</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -38,7 +38,7 @@ part_type_shape(partRain,pt_shape_line);
 part_type_size(partRain,0.2,0.3,0,0);
 part_type_color2(partRain,c_teal,c_white);
 part_type_alpha2(partRain,.5,.1);
-part_type_gravity(partRain,0.1,290); // Define Gravity
+part_type_gravity(partRain,0.7,290); // Define Gravity
 part_type_speed(partRain,0.5,0.5,0,0);
 part_type_direction(partRain,250,330,0,1);
 part_type_orientation(partRain,290,209,0,0,0);
