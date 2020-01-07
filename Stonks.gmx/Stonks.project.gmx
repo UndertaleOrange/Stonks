@@ -290,6 +290,8 @@
     <object>objects\obj_solidrect_lb</object>
     <object>objects\obj_solidrect_rb</object>
     <object>objects\obj_computerarea</object>
+    <object>objects\obj_test</object>
+    <object>objects\obj_deletrain</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>

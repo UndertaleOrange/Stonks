@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,91 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// GameMaker Particle System - Rain Physics
-// Non-controller Implementation
-
-partRain_sys = part_system_create();
-
-// Define Particle: Rain
-partRain = part_type_create();
-part_system_depth(partRain, 2 );
-part_system_depth(partRain_sys, 2 );
-part_type_shape(partRain,pt_shape_line);
-part_type_size(partRain,0.2,0.3,0,0);
-part_type_color2(partRain,c_teal,c_white);
-part_type_alpha2(partRain,.5,.1);
-part_type_gravity(partRain,0.7,290); // Define Gravity
-part_type_speed(partRain,0.5,0.5,0,0);
-part_type_direction(partRain,250,330,0,1);
-part_type_orientation(partRain,290,209,0,0,0);
-part_type_life(partRain,20,180);
-
-/*
-// Define Particle: Puddle
-partPuddle = part_type_create();
-part_type_shape(partPuddle,pt_shape_circle);
-part_type_size(partPuddle,0.5,0.8,.01,0);
-part_type_scale(partPuddle,.5,.1);
-part_type_color1(partPuddle,c_silver);
-part_type_alpha2(partPuddle,.4,0);
-part_type_speed(partPuddle,0,0,0,0);
-part_type_direction(partPuddle,0,0,0,0);
-part_type_gravity(partPuddle,0,270);
-part_type_life(partPuddle,50,60);
-
-// Define Sequence
-part_type_death(partRain,1,partPuddle);
-
-*/
-
-// Define Emitter
-partRain_emit = part_emitter_create(partRain_sys);
-
-part_emitter_region(
-partRain_sys,
-partRain_emit,
-0,
-room_width,
-0,
-0,
-ps_shape_line,
-ps_distr_linear
-);
-part_emitter_stream(partRain_sys,partRain_emit,partRain,5);
-
-// Define System Advance (Warning!)
-if (global.weather_startRain == true) {repeat (room_speed * 3) {part_system_update(partRain_sys);}} else {}
-global.weather_startRain = false;
+            <string>count = 0;
 </string>
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>snd_sfx_rain</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
-    <event eventtype="1" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -126,12 +48,33 @@ global.weather_startRain = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_particles_clear(partRain_emit)
-part_type_destroy(partRain_sys)
-part_emitter_clear(partRain_sys,partRain_emit)
-if audio_is_playing(snd_sfx_rain){
-audio_stop_sound(snd_sfx_rain)
+            <string>if instance_exists(part_rain){
+with part_rain instance_destroy();
+count++;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(0,0,count);
 </string>
           </argument>
         </arguments>

@@ -54,6 +54,9 @@ image_alpha = 0;
 if image_alpha &gt;= 1{
 room_goto(obj_varstash.faderoom);
 }
+if instance_exists(part_rain){
+with part_rain instance_destroy();
+}
 </string>
           </argument>
         </arguments>
