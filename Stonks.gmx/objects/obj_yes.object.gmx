@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>-1</persistent>
+  <depth>-3</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,27 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Global first variable setup
-global.mapesc = "false";
-faderoom = room_menu
-//map vars
-tutorial = 0;
-inmaptutorial = 0;
-mappoint = 0;
-//tento variabilny bude ukazovat na ktorom mappointe sme, jedno cislo = jedna lokacia
-//napr. 0 = tutorial
-inpc = 0;
-//checkuje ci je player na pc, screen prekryje room a hrac sa nebude moct pohnut
-currentquest = "not filled yet"
-//ukazuje aka bola posledna zadana quest v hre (je tu na set a get)
-currentquestcomplete = 0;
-//vysvetluje samo seba
-pcroom = room_menu
-//main pc location
+            <string>alpha = 0;
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -62,8 +48,32 @@ pcroom = room_menu
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// In-Game Global Vars
-global.weather_startRain = false;
+            <string>image_alpha += 0.2
+obj_quest.animation += 16
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_sprite_ext(spr_yes,0,1026+obj_quest.animation+48,75,obj_quest.screenratiox,obj_quest.screenratioy,0,c_white,1);
+///,obj_quest.screenratiox,obj_quest.screenratioy,0,c_white,1
 </string>
           </argument>
         </arguments>

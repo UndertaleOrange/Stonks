@@ -28,7 +28,10 @@
             <string>if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 cursor_sprite = spr_computercursor
 if mouse_check_button(mb_left){
-if instance_exists(obj_matthew){
+if obj_varstash.currentquest = "Use the computer"{
+obj_varstash.currentquestcomplete = 1
+}
+if instance_exists(obj_player){
 obj_varstash.faderoom = room_tutorialpc
 instance_create(0,0,obj_fadeout)
 }

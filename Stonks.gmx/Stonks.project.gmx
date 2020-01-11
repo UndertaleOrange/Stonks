@@ -150,6 +150,9 @@
     <sprite>sprites\spr_computerarea</sprite>
     <sprite>sprites\spr_matthewtest</sprite>
     <sprite>sprites\spr_tutorialquestright</sprite>
+    <sprite>sprites\spr_yes</sprite>
+    <sprite>sprites\spr_E</sprite>
+    <sprite>sprites\spr_Ezone</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -169,6 +172,7 @@
     <font>fonts\font4</font>
     <font>fonts\font6</font>
     <font>fonts\Minecraftia</font>
+    <font>fonts\MinecraftiaQuest</font>
     <font>fonts\font8</font>
   </fonts>
   <objects name="objects">
@@ -286,7 +290,7 @@
     <object>objects\obj_screenmessage</object>
     <object>objects\obj_matthewcamera</object>
     <object>objects\obj_tutorialchair</object>
-    <object>objects\obj_matthew</object>
+    <object>objects\obj_player</object>
     <object>objects\obj_solid</object>
     <object>objects\obj_solidrect_lt</object>
     <object>objects\obj_solidrect_rt</object>
@@ -294,6 +298,9 @@
     <object>objects\obj_solidrect_rb</object>
     <object>objects\obj_computerarea</object>
     <object>objects\obj_quest</object>
+    <object>objects\obj_yes</object>
+    <object>objects\obj_computerE</object>
+    <object>objects\obj_E</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>

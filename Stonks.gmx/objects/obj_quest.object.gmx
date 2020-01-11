@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>//str[1]=currentquest
 x = view_xview+480-sprite_width
+animation = 384
+animationend = 0;
 </string>
           </argument>
         </arguments>
@@ -55,6 +57,7 @@ imax=0
 str=''
 nextsound=0
 effect=0;
+
 screenratiox = display_get_width()/480
 screenratioy = display_get_height()/270
 
@@ -80,16 +83,26 @@ screenratioy = display_get_height()/270
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>screenratiox = window_get_width()/480
-screenratioy = window_get_height()/270
+            <string>if !window_get_fullscreen(){
+screenratiox = window_get_width()/480*1.5
+screenratioy = window_get_height()/270*1.5
+}
+if window_get_fullscreen(){
+screenratiox = window_get_width()/480*0.75
+screenratioy = window_get_height()/270*0.75
+}
 xview = view_xview+480-128
 xviewm = view_xview+480-128+4
 xviewl = view_xview+480-128-4
+//
 imax=string_length(obj_varstash.currentquest)
+if animationend = 1{
 if i&lt;imax
 {
 i+=1
 }
+}
+//
 y = view_yview+15
 if keyboard_check(vk_left) &amp;&amp; keyboard_check(vk_right){
 x = xview
@@ -105,6 +118,17 @@ x = xviewm
 else{
 x = xview
 }
+}
+}
+if animationend = 0 &amp;&amp; animation &gt; 0{
+animation -= 16
+}
+if animation = 0{
+animationend = 1
+}
+if obj_varstash.currentquestcomplete = 1{
+if !instance_exists(obj_yes){
+instance_create(0,0,obj_yes)
 }
 }
 </string>
@@ -129,10 +153,12 @@ x = xview
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(Minecraftia)
-draw_sprite_ext(spr_tutorialquestright,0,0,0,screenratiox,screenratioy,0,c_white,1);
-draw_text(view_xview+30,view_yview+10,screenratiox);
-draw_text(view_xview+80,view_yview+10,screenratioy);
+            <string>draw_set_font(MinecraftiaQuest)
+draw_set_color(c_white)
+draw_sprite_ext(spr_tutorialquestright,0,1056+animation,30,screenratiox,screenratioy,0,c_white,1);
+if animationend = 1{
+draw_text(1056+96+animation,45,string_copy(obj_varstash.currentquest,0,i));
+}
 //string_copy(obj_varstash.currentquest,0,i)
 </string>
           </argument>
