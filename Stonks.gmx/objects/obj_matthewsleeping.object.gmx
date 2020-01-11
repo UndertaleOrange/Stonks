@@ -79,6 +79,8 @@ please = 0
 }
 if seconds &gt; 360{
 instance_create(x-24,y-2,obj_matthew)
+obj_varstash.currentquest = "Use the computer"
+instance_create(0,0,obj_quest)
 instance_create(x,y,obj_tutorialchair)
 instance_destroy();
 }

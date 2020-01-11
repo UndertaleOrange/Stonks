@@ -148,6 +148,8 @@
     <sprite>sprites\spr_solidrect_lb</sprite>
     <sprite>sprites\spr_solidrect_rb</sprite>
     <sprite>sprites\spr_computerarea</sprite>
+    <sprite>sprites\spr_matthewtest</sprite>
+    <sprite>sprites\spr_tutorialquestright</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -167,6 +169,7 @@
     <font>fonts\font4</font>
     <font>fonts\font6</font>
     <font>fonts\Minecraftia</font>
+    <font>fonts\font8</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -290,8 +293,7 @@
     <object>objects\obj_solidrect_lb</object>
     <object>objects\obj_solidrect_rb</object>
     <object>objects\obj_computerarea</object>
-    <object>objects\obj_test</object>
-    <object>objects\obj_deletrain</object>
+    <object>objects\obj_quest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>

@@ -34,6 +34,10 @@ inmaptutorial = 0;
 mappoint = 0;
 //tento variabilny bude ukazovat na ktorom mappointe sme, jedno cislo = jedna lokacia
 //napr. 0 = tutorial
+inpc = 0;
+//checkuje ci je player na pc, screen prekryje room a hrac sa nebude moct pohnut
+currentquest = "not filled yet"
+//ukazuje aka bola posledna zadana quest v hre (je tu na set a get)
 </string>
           </argument>
         </arguments>

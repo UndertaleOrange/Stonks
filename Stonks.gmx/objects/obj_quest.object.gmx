@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,11 +25,39 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_matthewsleeping){
-x = obj_matthewsleeping.x + obj_matthewsleeping.sprite_width/2
-y = obj_matthewsleeping.y + obj_matthewsleeping.sprite_height/2
-}
-view_xview[0] = x-240
+            <string>//str[1]=currentquest
+x = view_xview+480-sprite_width
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//all the variables
+text=1
+textmax=0
+i=0
+imax=0
+str=''
+nextsound=0
+effect=0;
+screenratiox = display_get_width()/480
+screenratioy = display_get_height()/270
+
 </string>
           </argument>
         </arguments>
@@ -52,11 +80,60 @@ view_xview[0] = x-240
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_matthew){
-x = obj_matthew.x+10
-y = obj_matthew.y+obj_matthew.sprite_width/2
-
+            <string>screenratiox = window_get_width()/480
+screenratioy = window_get_height()/270
+xview = view_xview+480-128
+xviewm = view_xview+480-128+4
+xviewl = view_xview+480-128-4
+imax=string_length(obj_varstash.currentquest)
+if i&lt;imax
+{
+i+=1
 }
+y = view_yview+15
+if keyboard_check(vk_left) &amp;&amp; keyboard_check(vk_right){
+x = xview
+}
+else{
+if keyboard_check(vk_left){
+x = xviewl
+}
+else{
+if keyboard_check(vk_right){
+x = xviewm
+}
+else{
+x = xview
+}
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_font(Minecraftia)
+draw_sprite_ext(spr_tutorialquestright,0,0,0,screenratiox,screenratioy,0,c_white,1);
+draw_text(view_xview+30,view_yview+10,screenratiox);
+draw_text(view_xview+80,view_yview+10,screenratioy);
+//string_copy(obj_varstash.currentquest,0,i)
 </string>
           </argument>
         </arguments>
