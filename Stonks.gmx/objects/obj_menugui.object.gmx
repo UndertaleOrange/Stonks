@@ -115,7 +115,7 @@ draw_self();
 if obj_varstash.mappoint = 0{
 draw_text(x+8,y+48,"High School Lab")
 draw_text(x+8,y+72,"Tutorial");
-draw_text(x+8,y+96,"Above the lake")
+draw_text(x+8,y+96,"Lake")
 draw_set_color(c_red)
 draw_text(x+252,y+45,"Can't
 be

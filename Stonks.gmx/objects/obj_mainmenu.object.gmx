@@ -71,6 +71,7 @@ y -= 1;
 }
 else{
 shade = 1;
+wait = 2
 }
 }
 }

@@ -153,6 +153,7 @@
     <sprite>sprites\spr_yes</sprite>
     <sprite>sprites\spr_E</sprite>
     <sprite>sprites\spr_Ezone</sprite>
+    <sprite>sprites\spr_register</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
