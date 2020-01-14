@@ -154,6 +154,7 @@
     <sprite>sprites\spr_E</sprite>
     <sprite>sprites\spr_Ezone</sprite>
     <sprite>sprites\spr_register</sprite>
+    <sprite>sprites\spr_loginshutdown</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -302,6 +303,8 @@
     <object>objects\obj_yes</object>
     <object>objects\obj_computerE</object>
     <object>objects\obj_E</object>
+    <object>objects\obj_registerback</object>
+    <object>objects\obj_loginshutdown</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
