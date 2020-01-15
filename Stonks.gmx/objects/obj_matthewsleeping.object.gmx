@@ -62,6 +62,7 @@ tics = 0
 }
 if seconds = 301{
 instance_create(716,91,obj_screenmessage);
+audio_play_sound(snd_message,10,false);
 }
 if seconds &gt; 330{
 if seconds2 &lt;= 1 &amp;&amp; please = 0{

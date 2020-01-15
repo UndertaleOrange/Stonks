@@ -10,6 +10,7 @@
   <sounds name="sound">
     <sound>sound\snd_sfx_rain</sound>
     <sound>sound\snd_logo</sound>
+    <sound>sound\snd_message</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_omniqube</sprite>
@@ -155,6 +156,10 @@
     <sprite>sprites\spr_Ezone</sprite>
     <sprite>sprites\spr_register</sprite>
     <sprite>sprites\spr_loginshutdown</sprite>
+    <sprite>sprites\spr_loginshutdowngui</sprite>
+    <sprite>sprites\sprite_shutdownguishader</sprite>
+    <sprite>sprites\spr_profilemenu</sprite>
+    <sprite>sprites\spr_profile</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -305,6 +310,10 @@
     <object>objects\obj_E</object>
     <object>objects\obj_registerback</object>
     <object>objects\obj_loginshutdown</object>
+    <object>objects\obj_loginshutdowngui</object>
+    <object>objects\obj_loginshutdownguishader</object>
+    <object>objects\obj_loginprofilepicker</object>
+    <object>objects\obj_profilepickenabler</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>

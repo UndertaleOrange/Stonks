@@ -3,11 +3,11 @@
   <caption></caption>
   <width>480</width>
   <height>270</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>instance_create(0,0,obj_fadein)
@@ -60,6 +60,8 @@ with part_rain instance_destroy()
   </views>
   <instances>
     <instance objName="obj_registerback" x="0" y="0" name="inst_78BFD289" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_loginshutdown" x="32" y="240" name="inst_12E0000B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_profilepickenabler" x="240" y="96" name="inst_67E0589B" locked="0" code="" scaleX="0.625" scaleY="0.625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
