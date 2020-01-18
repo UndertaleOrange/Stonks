@@ -162,6 +162,7 @@
     <sprite>sprites\sprite_shutdownguishader</sprite>
     <sprite>sprites\spr_profilemenu</sprite>
     <sprite>sprites\spr_profile</sprite>
+    <sprite>sprites\spr_text</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
