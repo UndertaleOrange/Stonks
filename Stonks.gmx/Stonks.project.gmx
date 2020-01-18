@@ -139,6 +139,8 @@
     <sprite>sprites\spr_menugui</sprite>
     <sprite>sprites\spr_tutorialmapimage</sprite>
     <sprite>sprites\spr_tutorialback</sprite>
+    <sprite>sprites\spr_oslogo</sprite>
+    <sprite>sprites\spr_msdicon</sprite>
     <sprite>sprites\spr_matthewsleeping</sprite>
     <sprite>sprites\spr_tutorialchair</sprite>
     <sprite>sprites\spr_Z</sprite>
@@ -163,6 +165,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
+    <background>background\bg_pcplocha</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_menu</path>
@@ -181,6 +184,7 @@
     <font>fonts\Minecraftia</font>
     <font>fonts\MinecraftiaQuest</font>
     <font>fonts\font8</font>
+    <font>fonts\font10</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -307,6 +311,9 @@
     <object>objects\obj_quest</object>
     <object>objects\obj_yes</object>
     <object>objects\obj_computerE</object>
+    <object>objects\obj_pcboxbutton</object>
+    <object>objects\obj_pctextbox</object>
+    <object>objects\obj_pctextfield_STO</object>
     <object>objects\obj_E</object>
     <object>objects\obj_registerback</object>
     <object>objects\obj_loginshutdown</object>
