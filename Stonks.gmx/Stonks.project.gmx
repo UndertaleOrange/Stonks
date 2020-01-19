@@ -165,6 +165,7 @@
     <sprite>sprites\spr_field</sprite>
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\sprite150</sprite>
+    <sprite>sprites\spr_fieldtest</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -315,6 +316,7 @@
     <object>objects\obj_yes</object>
     <object>objects\obj_computerE</object>
     <object>objects\obj_pcboxbutton</object>
+    <object>objects\obj_newfield</object>
     <object>objects\obj_pctextbox</object>
     <object>objects\obj_pctextfield_STO</object>
     <object>objects\obj_E</object>
