@@ -163,10 +163,13 @@
     <sprite>sprites\spr_profilemenu</sprite>
     <sprite>sprites\spr_profile</sprite>
     <sprite>sprites\spr_text</sprite>
+    <sprite>sprites\spr_misal</sprite>
+    <sprite>sprites\spr_misal2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
     <background>background\bg_pcplocha</background>
+    <background>background\bg_plocha</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_menu</path>
