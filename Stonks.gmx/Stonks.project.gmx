@@ -162,13 +162,17 @@
     <sprite>sprites\sprite_shutdownguishader</sprite>
     <sprite>sprites\spr_profilemenu</sprite>
     <sprite>sprites\spr_profile</sprite>
-    <sprite>sprites\spr_text</sprite>
     <sprite>sprites\spr_misal</sprite>
     <sprite>sprites\spr_misal2</sprite>
     <sprite>sprites\spr_field</sprite>
     <sprite>sprites\spr_button</sprite>
     <sprite>sprites\sprite150</sprite>
     <sprite>sprites\spr_fieldtest</sprite>
+    <sprite>sprites\spr_login</sprite>
+    <sprite>sprites\spr_off</sprite>
+    <sprite>sprites\spr_systemlogo</sprite>
+    <sprite>sprites\spr_loadingparticle</sprite>
+    <sprite>sprites\spr_logocover</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -177,6 +181,7 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\path_menu</path>
+    <path>paths\path_loading</path>
   </paths>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -293,6 +298,7 @@
     <object>objects\obj_menulucas</object>
     <object>objects\obj_fadein</object>
     <object>objects\obj_fadeout</object>
+    <object>objects\obj_off</object>
     <object>objects\obj_tutorialmappoint</object>
     <object>objects\obj_testmerge1</object>
     <object>objects\obj_maptotalshader</object>
@@ -330,6 +336,10 @@
     <object>objects\obj_loginshutdownguishader</object>
     <object>objects\obj_loginprofilepicker</object>
     <object>objects\obj_profilepickenabler</object>
+    <object>objects\obj_login</object>
+    <object>objects\obj_loading</object>
+    <object>objects\obj_loadingparticle</object>
+    <object>objects\obj_loadingcover</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_omniqube</room>
@@ -338,6 +348,8 @@
     <room>rooms\room_map</room>
     <room>rooms\room_tutorial</room>
     <room>rooms\room_tutorialpc</room>
+    <room>rooms\room_tutorialdesktop</room>
+    <room>rooms\room_turnoff</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

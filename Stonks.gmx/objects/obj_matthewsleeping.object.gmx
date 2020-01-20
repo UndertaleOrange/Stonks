@@ -52,7 +52,16 @@ seconds2 = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>seconds++
+            <string>if instance_exists(obj_varstash){
+if obj_varstash.tutorialroom = 1{
+instance_create(obj_computerarea.x,y-2,obj_player)
+instance_destroy()
+if instance_exists(obj_Z){
+with obj_Z instance_destroy()
+}
+}
+}
+seconds++
 if seconds &gt;= 0 and seconds &lt;= 300{
 tics++
 if tics &gt;= 60{

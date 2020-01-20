@@ -7,7 +7,7 @@
   <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>instance_create(0,0,obj_fadein)
@@ -16,6 +16,7 @@ draw_set_alpha(1)
 instance_create(0,0,obj_matthewcamera);
 if instance_exists(obj_varstash){
 obj_varstash.pcroom = room_tutorialpc
+obj_varstash.currenthouse = room_tutorial;
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
