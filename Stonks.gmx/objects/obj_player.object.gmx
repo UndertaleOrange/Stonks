@@ -55,7 +55,7 @@ image_yscale = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !keyboard_check(vk_left) &amp;&amp; !keyboard_check(vk_right){
+            <string>if !keyboard_check(vk_left) &amp;&amp; !keyboard_check(vk_right) &amp;&amp; !keyboard_check(ord("A")) &amp;&amp; !keyboard_check(ord("D")){
 a++;
 if a &gt;= animation{
 if b = 0{
@@ -75,10 +75,10 @@ b = 0;
 }
 }
 }
-if keyboard_check(vk_left){
+if keyboard_check(vk_left) or keyboard_check(ord("A")){
 x -= 4
 }
-if keyboard_check(vk_right){
+if keyboard_check(vk_right) or keyboard_check(ord("D")){
 x += 4
 }
 </string>
