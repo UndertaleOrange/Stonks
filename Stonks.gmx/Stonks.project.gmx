@@ -326,6 +326,7 @@
       </objects>
       <objects name="Tutorial">
         <object>objects\obj_tutorialshader</object>
+        <object>objects\obj_questtutorialpush</object>
         <object>objects\obj_tutorialback</object>
         <object>objects\obj_tutorialchair</object>
       </objects>
