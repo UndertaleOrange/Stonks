@@ -28,7 +28,7 @@
             <string>draw = 0;
 alpha = 0;
 instance_create(0,0,obj_E)
-
+computerpressed = 0;
 
 </string>
           </argument>
@@ -57,6 +57,7 @@ instance_create(0,0,obj_E)
 if obj_player.x &gt;= x and obj_player.x &lt;= x+sprite_width{
 if keyboard_check( ord("E") ){
 global.qspush = true;
+computerpressed = 1
 if instance_exists(obj_player){
 obj_varstash.faderoom = obj_varstash.pcroom
 instance_create(0,0,obj_fadeout)

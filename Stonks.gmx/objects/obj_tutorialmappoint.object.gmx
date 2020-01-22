@@ -75,6 +75,7 @@ image_alpha += 0.01
 if tutorial = 1{
 instance_create(0,0,obj_fadeout);
 obj_varstash.faderoom = room_tutorial;
+global.qtutpush = true;
 }
 </string>
           </argument>

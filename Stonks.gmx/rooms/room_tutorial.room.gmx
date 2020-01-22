@@ -13,11 +13,18 @@
   <code>instance_create(0,0,obj_fadein)
 instance_create(0,0,part_rain)
 draw_set_alpha(1)
+instance_create(0,0,obj_questtutorialpush)
 instance_create(0,0,obj_matthewcamera);
 if instance_exists(obj_varstash){
 obj_varstash.pcroom = room_tutorialpc
 obj_varstash.currenthouse = room_tutorial;
-}</code>
+}
+if (global.qtutdone == false) {global.qtutpush = true;
+global.qspush = true;}
+show_debug_message(global.qtutpush)
+show_debug_message(global.qspush)
+show_debug_message(obj_varstash.currentquestcomplete)
+show_debug_message(global.qtutpush)</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

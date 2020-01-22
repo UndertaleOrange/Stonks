@@ -377,8 +377,8 @@
       <object>objects\obj_computerE</object>
       <object>objects\obj_yes</object>
       <object>objects\obj_quest</object>
-      <object>objects\obj_solid</object>
       <object>objects\obj_questsystem</object>
+      <object>objects\obj_solid</object>
       <object>objects\obj_E</object>
       <object>objects\obj_varstash</object>
       <object>objects\obj_fullscreen</object>

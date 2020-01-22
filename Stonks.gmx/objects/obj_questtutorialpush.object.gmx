@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>global.qtutdone = false;
+if (global.qtutdone == false) {global.qtutpush = true;
+global.qspush = true;}
 </string>
           </argument>
         </arguments>

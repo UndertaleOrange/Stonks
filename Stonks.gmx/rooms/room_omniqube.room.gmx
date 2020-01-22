@@ -11,7 +11,12 @@
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>global.mapesc = "false";
-window_set_size(960,540)</code>
+if(display_get_width() &lt;= 1280){
+window_set_size(960,540)
+}
+else{
+window_set_size(1440,810)
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
