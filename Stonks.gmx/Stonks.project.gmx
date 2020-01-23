@@ -25,7 +25,14 @@
         <sprite>sprites\spr_airplanetower</sprite>
         <sprite>sprites\spr_lampbroken</sprite>
         <sprite>sprites\spr_city4</sprite>
+        <sprite>sprites\spr_airplanetowershader</sprite>
+        <sprite>sprites\spr_satteliteshader</sprite>
         <sprite>sprites\spr_city1</sprite>
+        <sprite>sprites\spr_city4shader</sprite>
+        <sprite>sprites\spr_sattelite</sprite>
+        <sprite>sprites\spr_city1shader</sprite>
+        <sprite>sprites\spr_city3shader</sprite>
+        <sprite>sprites\spr_citybackgroundshader</sprite>
       </sprites>
       <sprites name="Sky">
         <sprite>sprites\spr_sun</sprite>
@@ -37,74 +44,73 @@
         <sprite>sprites\spr_clout4</sprite>
         <sprite>sprites\spr_clout6</sprite>
         <sprite>sprites\spr_clout2</sprite>
+        <sprite>sprites\spr_star1</sprite>
+        <sprite>sprites\spr_star3</sprite>
+        <sprite>sprites\spr_star4</sprite>
+        <sprite>sprites\spr_star8</sprite>
+        <sprite>sprites\spr_star6</sprite>
+        <sprite>sprites\spr_star7</sprite>
+        <sprite>sprites\spr_star5</sprite>
+        <sprite>sprites\spr_moon</sprite>
+        <sprite>sprites\spr_star2</sprite>
+        <sprite>sprites\spr_plane</sprite>
+        <sprite>sprites\spr_plane1shader</sprite>
+        <sprite>sprites\spr_plane2shader</sprite>
+        <sprite>sprites\spr_planefoam</sprite>
+        <sprite>sprites\spr_plane2</sprite>
       </sprites>
-      <sprite>sprites\spr_car1</sprite>
-      <sprite>sprites\spr_car2</sprite>
-      <sprite>sprites\spr_car4</sprite>
-      <sprite>sprites\spr_car5</sprite>
-      <sprite>sprites\spr_car6</sprite>
-      <sprite>sprites\spr_airplanetowershader</sprite>
-      <sprite>sprites\spr_carshader</sprite>
-      <sprite>sprites\spr_satteliteshader</sprite>
-      <sprite>sprites\spr_car3</sprite>
-      <sprite>sprites\spr_star2</sprite>
-      <sprite>sprites\spr_star1</sprite>
-      <sprite>sprites\spr_star3</sprite>
-      <sprite>sprites\spr_star4</sprite>
-      <sprite>sprites\spr_star5</sprite>
-      <sprite>sprites\spr_star6</sprite>
-      <sprite>sprites\spr_star7</sprite>
-      <sprite>sprites\spr_star8</sprite>
-      <sprite>sprites\spr_sattelite</sprite>
-      <sprite>sprites\spr_city4shader</sprite>
-      <sprite>sprites\spr_city3shader</sprite>
-      <sprite>sprites\spr_moon</sprite>
-      <sprite>sprites\spr_city1shader</sprite>
-      <sprite>sprites\spr_citybackgroundshader</sprite>
-      <sprite>sprites\spr_plane2</sprite>
-      <sprite>sprites\spr_plane2shader</sprite>
-      <sprite>sprites\spr_plane</sprite>
-      <sprite>sprites\spr_plane1shader</sprite>
-      <sprite>sprites\spr_car30</sprite>
-      <sprite>sprites\spr_car60</sprite>
-      <sprite>sprites\spr_car40</sprite>
-      <sprite>sprites\spr_car50</sprite>
-      <sprite>sprites\spr_planefoam</sprite>
-      <sprite>sprites\spr_car20</sprite>
-      <sprite>sprites\spr_settingsmenu</sprite>
-      <sprite>sprites\spr_videomenu</sprite>
-      <sprite>sprites\spr_mainmenu</sprite>
-      <sprite>sprites\spr_controlsmenu</sprite>
-      <sprite>sprites\spr_windowmenu</sprite>
-      <sprite>sprites\spr_gamemenu</sprite>
-      <sprite>sprites\spr_exitmenu</sprite>
-      <sprite>sprites\spr_exit</sprite>
-      <sprite>sprites\spr_word</sprite>
-      <sprite>sprites\spr_continue</sprite>
-      <sprite>sprites\spr_settings</sprite>
-      <sprite>sprites\spr_controls</sprite>
-      <sprite>sprites\spr_audiomenu</sprite>
-      <sprite>sprites\spr_audiosett</sprite>
-      <sprite>sprites\spr_videosett</sprite>
-      <sprite>sprites\spr_gamesett</sprite>
-      <sprite>sprites\spr_exityes</sprite>
-      <sprite>sprites\spr_exitno</sprite>
+      <sprites name="Cars">
+        <sprite>sprites\spr_car1</sprite>
+        <sprite>sprites\spr_car2</sprite>
+        <sprite>sprites\spr_car4</sprite>
+        <sprite>sprites\spr_car5</sprite>
+        <sprite>sprites\spr_car6</sprite>
+        <sprite>sprites\spr_car3</sprite>
+        <sprite>sprites\spr_car30</sprite>
+        <sprite>sprites\spr_car20</sprite>
+        <sprite>sprites\spr_car50</sprite>
+        <sprite>sprites\spr_car40</sprite>
+        <sprite>sprites\spr_car60</sprite>
+        <sprite>sprites\spr_car10</sprite>
+        <sprite>sprites\spr_carshader</sprite>
+      </sprites>
+      <sprites name="Interactable">
+        <sprite>sprites\spr_videomenu</sprite>
+        <sprite>sprites\spr_mainmenu</sprite>
+        <sprite>sprites\spr_controlsmenu</sprite>
+        <sprite>sprites\spr_gamemenu</sprite>
+        <sprite>sprites\spr_exitmenu</sprite>
+        <sprite>sprites\spr_windowmenu</sprite>
+        <sprite>sprites\spr_exit</sprite>
+        <sprite>sprites\spr_continue</sprite>
+        <sprite>sprites\spr_settings</sprite>
+        <sprite>sprites\spr_controls</sprite>
+        <sprite>sprites\spr_audiomenu</sprite>
+        <sprite>sprites\spr_videosett</sprite>
+        <sprite>sprites\spr_gamesett</sprite>
+        <sprite>sprites\spr_exitno</sprite>
+        <sprite>sprites\spr_exityes</sprite>
+        <sprite>sprites\spr_windowed</sprite>
+        <sprite>sprites\spr_controller</sprite>
+        <sprite>sprites\spr_borderless</sprite>
+        <sprite>sprites\spr_bindcontrols</sprite>
+        <sprite>sprites\spr_audiosett</sprite>
+        <sprite>sprites\spr_screenmode</sprite>
+        <sprite>sprites\spr_word</sprite>
+        <sprite>sprites\spr_chooseshader</sprite>
+        <sprite>sprites\spr_fullscreen</sprite>
+        <sprite>sprites\spr_bigmenu</sprite>
+        <sprite>sprites\spr_back</sprite>
+        <sprite>sprites\spr_settingsmenu</sprite>
+      </sprites>
+      <sprites name="Tiles">
+        <sprite>sprites\spr_bar</sprite>
+        <sprite>sprites\spr_menuborderright</sprite>
+        <sprite>sprites\spr_menumain</sprite>
+        <sprite>sprites\spr_menu</sprite>
+        <sprite>sprites\spr_menuborderleft</sprite>
+      </sprites>
       <sprite>sprites\spr_logo</sprite>
-      <sprite>sprites\spr_controller</sprite>
-      <sprite>sprites\spr_windowed</sprite>
-      <sprite>sprites\spr_bindcontrols</sprite>
-      <sprite>sprites\spr_borderless</sprite>
-      <sprite>sprites\spr_bar</sprite>
-      <sprite>sprites\spr_screenmode</sprite>
-      <sprite>sprites\spr_menuborderleft</sprite>
-      <sprite>sprites\spr_back</sprite>
-      <sprite>sprites\spr_menuborderright</sprite>
-      <sprite>sprites\spr_bigmenu</sprite>
-      <sprite>sprites\spr_menumain</sprite>
-      <sprite>sprites\spr_chooseshader</sprite>
-      <sprite>sprites\spr_fullscreen</sprite>
-      <sprite>sprites\spr_car10</sprite>
-      <sprite>sprites\spr_menu</sprite>
     </sprites>
     <sprites name="Memes">
       <sprite>sprites\spr_misal2</sprite>
