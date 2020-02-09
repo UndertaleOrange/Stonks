@@ -89,13 +89,14 @@ global.qtutpush = false;
             <string>// currentquest
 // currentquestcomplete
 // qspush
-//obj_varstash.currentquestcomplete = 0;
+// obj_varstash.currentquestcomplete = 0;
 
 if (global.qspush = true &amp;&amp; obj_varstash.currentquestcomplete = 0) {
 
 switch obj_varstash.currentquest {
 
 case q_move: 
+if instance_exists(obj_player){
 if (global.qtutpush = true) {
 if (keyboard_check(vk_left) || keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_down) || keyboard_check(ord("W")) || keyboard_check(ord("A")) || keyboard_check(ord("S")) || keyboard_check(ord("D")) ) {
 obj_varstash.currentquestcomplete = 1;
@@ -105,12 +106,21 @@ with obj_questtutorialpush instance_destroy();
 }
 global.qspush = false;
 }}
+}
 break;
 /////////////////////////////////////////////////////////
 case q_pcfirst:
 if instance_exists(obj_computerarea){
 if obj_computerarea.computerclicked = 1{
 obj_varstash.currentquestcomplete = 1;
+if instance_exists(obj_quest){
+if obj_quest.animationend = 0{
+with obj_quest instance_destroy();
+with obj_yes instance_destroy();
+}
+else{
+
+}
 global.qspush = false;
 newquest = ""
 timeout = 0
@@ -119,6 +129,16 @@ timeout = 0
 if instance_exists(obj_computerE){
 if obj_computerE.computerpressed = 1{
 obj_varstash.currentquestcomplete = 1;
+if instance_exists(obj_quest){
+if obj_quest.animationend = 0{
+with obj_quest instance_destroy();
+with obj_yes instance_destroy();
+}
+else{
+
+}
+}
+}
 global.qspush = false;
 newquest = ""
 timeout = 0

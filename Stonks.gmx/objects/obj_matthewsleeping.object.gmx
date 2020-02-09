@@ -87,11 +87,14 @@ please = 0
 }
 }
 }
-if seconds &gt; 360{
-instance_create(x-24,y-2,obj_player)
+if seconds = 270{
 obj_varstash.currentquest = "Use WASD or arrow
 keys to move."
-instance_create(0,0,obj_quest)
+instance_create(0,0,obj_quest);
+}
+if seconds &gt; 360{
+audio_play_sound(snd_universal_pop,10,false)
+instance_create(x-24,y-2,obj_player)
 instance_create(x,y,obj_tutorialchair)
 instance_destroy();
 }

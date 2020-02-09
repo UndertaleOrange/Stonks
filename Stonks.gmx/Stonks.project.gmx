@@ -11,6 +11,7 @@
     <sound>sound\snd_sfx_rain</sound>
     <sound>sound\snd_logo</sound>
     <sound>sound\snd_message</sound>
+    <sound>sound\snd_universal_pop</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menu">
@@ -121,7 +122,9 @@
     <sprites name="PC">
       <sprite>sprites\spr_cursorInPc</sprite>
       <sprite>sprites\spr_msdicon</sprite>
+      <sprite>sprites\spr_messengertext</sprite>
       <sprite>sprites\spr_oslogo</sprite>
+      <sprite>sprites\spr_browsertext</sprite>
       <sprite>sprites\spr_loginshutdown</sprite>
       <sprite>sprites\spr_loginshutdowngui</sprite>
       <sprite>sprites\sprite_shutdownguishader</sprite>
@@ -209,6 +212,12 @@
         <sprite>sprites\spr_ladislav</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\sprite160</sprite>
+    <sprite>sprites\spr_systembutton</sprite>
+    <sprite>sprites\spr_tutorialsystemgui</sprite>
+    <sprite>sprites\spr_systemguiselect</sprite>
+    <sprite>sprites\spr_systemshutdown</sprite>
+    <sprite>sprites\spr_systemshutdowngui</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -395,6 +404,18 @@
     <objects name="UI">
       <object>objects\obj_renderui</object>
     </objects>
+    <object>objects\obj_desktopbar</object>
+    <object>objects\obj_systembutton</object>
+    <object>objects\obj_tabbrowser</object>
+    <object>objects\obj_guibrowser</object>
+    <object>objects\obj_tabmessenger</object>
+    <object>objects\obj_guimessenger</object>
+    <object>objects\obj_browsertext</object>
+    <object>objects\obj_messagetext</object>
+    <object>objects\obj_tutorialsystemgui</object>
+    <object>objects\obj_systemshutdown</object>
+    <object>objects\obj_systemshutdowngui</object>
+    <object>objects\obj_systemguishader</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">

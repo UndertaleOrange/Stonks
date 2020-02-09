@@ -59,7 +59,12 @@ if keyboard_check( ord("E") ){
 global.qspush = true;
 computerpressed = 1
 if instance_exists(obj_player){
+if obj_varstash.computerlogin = 0{
 obj_varstash.faderoom = obj_varstash.pcroom
+}
+if obj_varstash.computerlogin = 1{
+obj_varstash.faderoom = room_tutorialdesktop
+}
 instance_create(0,0,obj_fadeout)
 }
 else{

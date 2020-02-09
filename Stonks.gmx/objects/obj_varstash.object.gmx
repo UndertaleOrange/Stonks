@@ -75,6 +75,7 @@ tutorialroom = 0;
 //toto je tu kvoli tomu lebo - persistency + particles == pc velmi vela výbuch allah akbar
 sleep = 0;
 //rozoznava ci pc isiel spat abo sa vypol
+computerlogin = 0
 </string>
           </argument>
         </arguments>
