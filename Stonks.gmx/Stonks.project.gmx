@@ -218,6 +218,8 @@
     <sprite>sprites\spr_systemguiselect</sprite>
     <sprite>sprites\spr_systemshutdown</sprite>
     <sprite>sprites\spr_systemshutdowngui</sprite>
+    <sprite>sprites\spr_tutorialMessenger</sprite>
+    <sprite>sprites\spr_32circle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
