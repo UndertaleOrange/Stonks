@@ -194,7 +194,10 @@
         <sprite>sprites\spr_matej3</sprite>
         <sprite>sprites\spr_matej2</sprite>
         <sprite>sprites\spr_matthew</sprite>
-        <sprite>sprites\spr_matthewtest</sprite>
+        <sprite>sprites\spr_matthewRightWalk</sprite>
+        <sprite>sprites\spr_matthewLeftWalk</sprite>
+        <sprite>sprites\spr_matthewRight</sprite>
+        <sprite>sprites\spr_matthewLeft</sprite>
       </sprites>
       <sprites name="Lucas">
         <sprite>sprites\spr_lucas</sprite>
