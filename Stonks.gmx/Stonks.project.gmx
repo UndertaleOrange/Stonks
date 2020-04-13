@@ -223,6 +223,7 @@
     <sprite>sprites\spr_systemshutdowngui</sprite>
     <sprite>sprites\spr_tutorialMessenger</sprite>
     <sprite>sprites\spr_32circle</sprite>
+    <sprite>sprites\spr_tutorialprofile</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -248,6 +249,7 @@
     <font>fonts\MinecraftiaQuest</font>
     <font>fonts\font8</font>
     <font>fonts\font10</font>
+    <font>fonts\tahomaBasic</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -421,6 +423,8 @@
     <object>objects\obj_systemshutdown</object>
     <object>objects\obj_systemshutdowngui</object>
     <object>objects\obj_systemguishader</object>
+    <object>objects\obj_tutorialMessengerBack</object>
+    <object>objects\obj_tutorialChat</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">
@@ -433,6 +437,7 @@
     <room>rooms\room_tutorialpc</room>
     <room>rooms\room_tutorialdesktop</room>
     <room>rooms\room_turnoff</room>
+    <room>rooms\room_testing</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

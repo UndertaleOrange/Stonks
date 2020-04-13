@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>-1</persistent>
+  <depth>-1</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,14 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// In-Game Global Vars
-global.weather_startRain = false;
-
-global.qspush = false;
+            <string>messages = obj_varstash.tutorialmessages;
+texting = 0
+message = "bruh"
+shake = 0
+a = 0
+yaxis = 0;
+writing = 0;
+npcwriting = 0;
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,35 +55,68 @@ global.qspush = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Global first variable setup
-global.mapesc = "false";
-faderoom = room_menu
-//map vars
-tutorial = 0;
-inmaptutorial = 0;
-mappoint = 0;
-//tento variabilny bude ukazovat na ktorom mappointe sme, jedno cislo = jedna lokacia
-//napr. 0 = tutorial
-inpc = 0;
-//checkuje ci je player na pc, screen prekryje room a hrac sa nebude moct pohnut
-currentquest = "not filled yet"
-//ukazuje aka bola posledna zadana quest v hre (je tu na set a get)
-currentquestcomplete = 0;
-//vysvetluje samo seba
-pcroom = room_menu
-//main pc location
-nick = ""
-//ulozeny nickname potom jak si vyberies v tutoriali
-currenthouse = room_menu
-//aby sa vedel týpek vraciat naspat od kompu 
-tutorialroom = 0;
-//aby si vedel ci si uz bol v tutorial roomke
-//toto je tu kvoli tomu lebo - persistency + particles == pc velmi vela výbuch allah akbar
-sleep = 0;
-//rozoznava ci pc isiel spat abo sa vypol
-computerlogin = 0
-//tutorial vars for messenger na choice saving budeme mat iny objekt lebo to bude fes trash 
-tutorialmessages = 0;
+            <string>if a = 0{
+shake += 0.5
+if shake = 4{
+a = 1
+}
+}
+if a = 1{
+shake -= 0.5
+if shake = -4{
+a = 0
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//draw_self();
+draw_set_font(tahomaBasic);
+if messages = 0 {
+texting++;
+npcwriting = 1
+draw_sprite(spr_tutorialprofile,0,x+4,y+4)
+yaxis = 4
+xaxis = 40
+
+if texting &gt; string_length(message)*(269 / 60){
+npcwriting = 0;
+draw_set_color(c_ltgray)
+draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,false)
+draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*string_length(message),y+yaxis+32,8,8,0)
+draw_set_color(c_black)
+draw_text(x+xaxis+16+8,y+yaxis+2,message);
+}
+}
+if npcwriting = 1{
+draw_set_color(c_ltgray)
+draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,false)
+draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+66,y+yaxis+32,8,8,0)
+draw_set_color(c_black);
+draw_circle(x+xaxis+26,y+yaxis+17+shake,4,false)
+draw_circle(x+xaxis+26+15,y+yaxis+17+(-shake),4,false)
+draw_circle(x+xaxis+26+30,y+yaxis+17+shake,4,false)
+draw_set_color(c_white);
+}
 </string>
           </argument>
         </arguments>
