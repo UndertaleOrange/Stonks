@@ -78,6 +78,10 @@ sleep = 0;
 computerlogin = 0
 //tutorial vars for messenger na choice saving budeme mat iny objekt lebo to bude fes trash 
 tutorialmessages = 0;
+xaxis = 0;
+yaxis = 0;
+person = obj_tutorialRobert
+tutorialfinished = true;
 </string>
           </argument>
         </arguments>

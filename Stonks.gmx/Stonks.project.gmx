@@ -250,6 +250,9 @@
     <font>fonts\font8</font>
     <font>fonts\font10</font>
     <font>fonts\tahomaBasic</font>
+    <font>fonts\font12</font>
+    <font>fonts\font13</font>
+    <font>fonts\font14</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -425,6 +428,8 @@
     <object>objects\obj_systemguishader</object>
     <object>objects\obj_tutorialMessengerBack</object>
     <object>objects\obj_tutorialChat</object>
+    <object>objects\obj_tutorialRobert</object>
+    <object>objects\obj_controlChat</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">

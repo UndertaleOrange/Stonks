@@ -27,12 +27,15 @@
             <kind>1</kind>
             <string>messages = obj_varstash.tutorialmessages;
 texting = 0
-message = "bruh"
 shake = 0
 a = 0
-yaxis = 0;
+xaxis = obj_varstash.xaxis + 40
+yaxis = obj_varstash.yaxis + 4
 writing = 0;
-npcwriting = 0;
+npcwriting = 1;
+person = obj_varstash.person
+loop = 0;
+
 </string>
           </argument>
         </arguments>
@@ -91,22 +94,51 @@ a = 0
             <kind>1</kind>
             <string>//draw_self();
 draw_set_font(tahomaBasic);
-if messages = 0 {
+if texting &lt;= string_length(person.message[messages])*(269 / 60){
 texting++;
-npcwriting = 1
-draw_sprite(spr_tutorialprofile,0,x+4,y+4)
-yaxis = 4
-xaxis = 40
-
-if texting &gt; string_length(message)*(269 / 60){
+obj_varstash.tutorialfinished = false;
+}
+draw_sprite(spr_tutorialprofile,0,x+xaxis-36,y+yaxis)
+//
+if texting &gt; string_length(person.message[messages])*(269 / 60){
 npcwriting = 0;
 draw_set_color(c_ltgray)
 draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,false)
-draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*string_length(message),y+yaxis+32,8,8,0)
+if string_length(person.message[messages]) &lt;= 25{
+draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*string_length(person.message[messages]),y+yaxis+32,8,8,0)
+}
+else{
+dlzka = (string_length(person.message[messages]) - floor((string_length(person.message[messages])/25)-1))
+riadok = dlzka/25 - 1.000000000000001
+riadok = floor(riadok)
+draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*25,y+yaxis+32+(riadok*16),8,8,0)
+}
 draw_set_color(c_black)
-draw_text(x+xaxis+16+8,y+yaxis+2,message);
+if string_length(person.message[messages]) &lt;= 25{
+draw_text(x+xaxis+16+8,y+yaxis+10,person.message[messages]);
+}
+else{
+draw_text(x+xaxis+16+8,y+yaxis+3,person.message[messages]);
+}
+if loop = 0{
+
+if string_length(person.message[obj_varstash.tutorialmessages]) &lt;= 25{
+obj_varstash.yaxis = yaxis+32
+
+}
+else{
+dlzka2 = (string_length(person.message[obj_varstash.tutorialmessages]) - floor((string_length(person.message[obj_varstash.tutorialmessages])/25)-1))
+riadok2 = dlzka2/25 - 1.000000000000001
+riadok2 = floor(riadok2)
+obj_varstash.yaxis = yaxis+32//+(riadok2*16)
+
+}
+obj_varstash.tutorialmessages++;
+obj_controlChat.loop = 1;
+loop = 1
 }
 }
+//
 if npcwriting = 1{
 draw_set_color(c_ltgray)
 draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,false)
