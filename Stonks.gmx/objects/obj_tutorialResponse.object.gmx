@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>-1</persistent>
+  <depth>-1</depth>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,71 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// In-Game Global Vars
-global.weather_startRain = false;
-
-global.qspush = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// Global first variable setup
-global.mapesc = "false";
-faderoom = room_menu
-//map vars
-tutorial = 0;
-inmaptutorial = 0;
-mappoint = 0;
-//tento variabilny bude ukazovat na ktorom mappointe sme, jedno cislo = jedna lokacia
-//napr. 0 = tutorial
-inpc = 0;
-//checkuje ci je player na pc, screen prekryje room a hrac sa nebude moct pohnut
-currentquest = "not filled yet"
-//ukazuje aka bola posledna zadana quest v hre (je tu na set a get)
-currentquestcomplete = 0;
-//vysvetluje samo seba
-pcroom = room_menu
-//main pc location
-nick = ""
-//ulozeny nickname potom jak si vyberies v tutoriali
-currenthouse = room_menu
-//aby sa vedel týpek vraciat naspat od kompu 
-tutorialroom = 0;
-//aby si vedel ci si uz bol v tutorial roomke
-//toto je tu kvoli tomu lebo - persistency + particles == pc velmi vela výbuch allah akbar
-sleep = 0;
-//rozoznava ci pc isiel spat abo sa vypol
-computerlogin = 0
-//tutorial vars for messenger na choice saving budeme mat iny objekt lebo to bude fes trash 
-tutorialmessages = 0;
-xaxis = 0;
-yaxis = 0;
-downyaxis = 0;
-person = obj_tutorialRobert
-tutorialfinished = true;
-rozdiel = 0
+            <string>col = make_colour_rgb(112,146,190)
+collight = make_colour_rgb(172,192,219)
+choosed = false
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -106,16 +50,63 @@ rozdiel = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if downyaxis &gt;= 113{
-rozdiel = downyaxis - 113
-if instance_exists(obj_tutorialChat){
-obj_tutorialChat.y -= rozdiel;
+            <string>if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x+279 &amp;&amp; mouse_y &gt; y+4 &amp;&amp; mouse_y &lt; y+28){
+image_alpha = 0.4;
+draw_rectangle_colour(x,y+4,x+279,y+28,collight,collight,col,col,false);
+if mouse_check_button_pressed(mb_left){
+if choosed = false{
+obj_controlResponse.madechoice = 0
+instance_create(89,206,obj_tutorialRespond);
+choosed = true
 }
-if instance_exists(obj_tutorialAnswer){
-obj_tutorialAnswer.y -= rozdiel;
 }
-downyaxis -= rozdiel
 }
+if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x+279 &amp;&amp; mouse_y &gt; y+29 &amp;&amp; mouse_y &lt; y+53){
+image_alpha = 0.4;
+draw_rectangle_colour(x,y+29,x+279,y+53,collight,collight,col,col,false);
+if mouse_check_button_pressed(mb_left){
+if choosed = false{
+obj_controlResponse.madechoice = 1
+instance_create(89,206,obj_tutorialRespond);
+choosed = true
+}
+}
+}
+if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x+279 &amp;&amp; mouse_y &gt; y+54 &amp;&amp; mouse_y &lt; y+78){
+image_alpha = 0.4;
+draw_rectangle_colour(x,y+54,x+279,y+78,collight,collight,col,col,false);
+if mouse_check_button_pressed(mb_left){
+if choosed = false{
+obj_controlResponse.madechoice = 2
+instance_create(89,206,obj_tutorialRespond);
+choosed = true
+}
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_alpha = 1
+draw_text(x+4,y+4,obj_tutorialRobert.response[0, 0]);
+draw_text(x+4,y+29,obj_tutorialRobert.response[0, 1]);
+draw_text(x+4,y+54,obj_tutorialRobert.response[0, 2]);
 </string>
           </argument>
         </arguments>

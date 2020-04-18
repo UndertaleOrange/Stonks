@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>instance_create(81,19,obj_tutorialChat);
 loop = 0;
+madechoice = 0;
 </string>
           </argument>
         </arguments>
@@ -49,18 +50,19 @@ loop = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message(obj_varstash.tutorialmessages);
-if loop = 1{
+            <string>if loop = 1{
 switch (obj_varstash.tutorialmessages)
 {
 case 0: break
 case 1: instance_create(81,19,obj_tutorialChat); break;
+case 2: break;
 default: break;
 
 
 }
 loop = 0;
 }
+show_debug_message(other.y)
 </string>
           </argument>
         </arguments>

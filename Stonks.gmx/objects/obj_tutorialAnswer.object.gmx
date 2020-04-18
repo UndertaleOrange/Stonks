@@ -25,51 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>messages = obj_varstash.tutorialmessages;
-texting = 0
+            <string>response = obj_tutorialRobert.respond[obj_controlResponse.choice, obj_controlResponse.madechoice]
 shake = 0
 a = 0
-xaxis = obj_varstash.xaxis + 40
+xaxis = obj_varstash.xaxis + 239
 yaxis = obj_varstash.yaxis + 4
 writing = 0;
 npcwriting = 1;
 person = obj_varstash.person
 loop = 0;
 loop2 = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if a = 0{
-shake += 0.5
-if shake = 4{
-a = 1
-}
-}
-if a = 1{
-shake -= 0.5
-if shake = -4{
-a = 0
-}
-}
 </string>
           </argument>
         </arguments>
@@ -94,48 +59,33 @@ a = 0
             <kind>1</kind>
             <string>//draw_self();
 draw_set_font(tahomaBasic);
-if texting &lt;= string_length(person.message[messages])*(269 / 120){
-texting++;
-obj_varstash.tutorialfinished = false;
-if obj_chatcover.mutation != 0{
-if instance_exists(obj_tutorialChat){
-obj_tutorialChat.y += obj_chatcover.mutation
-}
-if instance_exists(obj_tutorialAnswer){
-obj_tutorialAnswer.y += obj_chatcover.mutation
-}
-obj_chatcover.mutation = 0
-}
-}
-draw_sprite(spr_tutorialprofile,0,x+xaxis-36,y+yaxis)
+draw_sprite(spr_tutorialprofile,0,x+xaxis+2,y+yaxis)
 //
-if texting &gt; string_length(person.message[messages])*(269 / 120){
-npcwriting = 0;
 draw_set_color(c_ltgray)
-draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,false)
-if string_length(person.message[messages]) &lt;= 25{
-draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*string_length(person.message[messages]),y+yaxis+32,8,8,0)
+draw_triangle(x+xaxis,y+yaxis+16,x+xaxis-16,y+yaxis+16,x+xaxis-16,y+yaxis+24,false)
+if string_length(response) &lt;= 25{
+draw_roundrect_ext(x+xaxis-16,y+yaxis,x+xaxis-16-16-7*string_length(response),y+yaxis+32,8,8,0)
 if loop2 = 0{
 obj_varstash.downyaxis = y+yaxis+32
 loop2 = 1
 }
 }
 else{
-dlzka = (string_length(person.message[messages]) - floor((string_length(person.message[messages])/25)-1))
+dlzka = (string_length(response) - floor((string_length(response)/25)-1))
 riadok = dlzka/25 - 1.000000000000001
 riadok = floor(riadok)
-draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*25,y+yaxis+32+(riadok*16),8,8,0)
+draw_roundrect_ext(x+xaxis-16,y+yaxis,x+xaxis-16-16-7*25,y+yaxis+32+(riadok*16),8,8,0)
 if loop2 = 0{
-obj_varstash.downyaxis = y+yaxis+32+(riadok*16);
+obj_varstash.downyaxis = y+yaxis+32+(riadok*16)
 loop2 = 1
 }
 }
 draw_set_color(c_black)
-if string_length(person.message[messages]) &lt;= 25{
-draw_text(x+xaxis+16+8,y+yaxis+10,person.message[messages]);
+if string_length(response) &lt;= 25{
+draw_text(x+xaxis-16-16-7*string_length(response)+8,y+yaxis+4,response);
 }
 else{
-draw_text(x+xaxis+16+8,y+yaxis+3,person.message[messages]);
+draw_text(x+xaxis-16-16-7*25+8,y+yaxis+4,response);
 }
 if loop = 0{
 if obj_chatcover.mutation != 0{
@@ -155,26 +105,19 @@ else{
 dlzka2 = (string_length(person.message[obj_varstash.tutorialmessages]) - floor((string_length(person.message[obj_varstash.tutorialmessages])/25)-1))
 riadok2 = dlzka2/25 - 1.000000000000001
 riadok2 = floor(riadok2)
-obj_varstash.yaxis = yaxis+32//+(riadok2*16)
+obj_varstash.yaxis = yaxis+32+(riadok*16)
 
 }
-obj_varstash.tutorialmessages++;
+obj_controlResponse.responded = 1 
+obj_controlResponse.choice++;
 obj_controlChat.loop = 1;
 obj_controlResponse.loop = 1;
 loop = 1
+obj_controlResponse.responded = 1 
 }
-}
-//
-if npcwriting = 1{
-draw_set_color(c_ltgray)
-draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,false)
-draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+66,y+yaxis+32,8,8,0)
-draw_set_color(c_black);
-draw_circle(x+xaxis+26,y+yaxis+17+shake,4,false)
-draw_circle(x+xaxis+26+15,y+yaxis+17+(-shake),4,false)
-draw_circle(x+xaxis+26+30,y+yaxis+17+shake,4,false)
-draw_set_color(c_white);
-}
+
+
+
 </string>
           </argument>
         </arguments>

@@ -54,10 +54,18 @@ global.tutorialmode = true;</code>
   <instances>
     <instance objName="obj_desktopbar" x="0" y="232" name="inst_C65FFF42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_systembutton" x="0" y="232" name="inst_DD1DDC2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tabbrowser" x="34" y="232" name="inst_392BB346" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tabmessenger" x="68" y="232" name="inst_71517DB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tabbrowser" x="40" y="232" name="inst_392BB346" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tabmessenger" x="80" y="232" name="inst_71517DB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_browsertext" x="4" y="4" name="inst_9A333542" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_messagetext" x="3" y="62" name="inst_2AF4FF3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorialMessengerBack" x="480" y="0" name="inst_E08206CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chatcover" x="561" y="13" name="inst_F9E95554" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_textfieldcover" x="566" y="200" name="inst_20AC5371" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_desktopbar" x="480" y="232" name="inst_5A63E829" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_systembutton" x="480" y="232" name="inst_D32BC2FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tabbrowser" x="520" y="232" name="inst_C72A8A68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tabmessenger" x="560" y="232" name="inst_576D2896" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Z" x="78" y="330" name="inst_8E4D7253" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -224,6 +224,8 @@
     <sprite>sprites\spr_tutorialMessenger</sprite>
     <sprite>sprites\spr_32circle</sprite>
     <sprite>sprites\spr_tutorialprofile</sprite>
+    <sprite>sprites\spr_textfieldcover</sprite>
+    <sprite>sprites\spr_chatcover</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -253,6 +255,7 @@
     <font>fonts\font12</font>
     <font>fonts\font13</font>
     <font>fonts\font14</font>
+    <font>fonts\font15</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -428,8 +431,14 @@
     <object>objects\obj_systemguishader</object>
     <object>objects\obj_tutorialMessengerBack</object>
     <object>objects\obj_tutorialChat</object>
+    <object>objects\obj_tutorialAnswer</object>
     <object>objects\obj_tutorialRobert</object>
     <object>objects\obj_controlChat</object>
+    <object>objects\obj_controlResponse</object>
+    <object>objects\obj_tutorialResponse</object>
+    <object>objects\obj_tutorialRespond</object>
+    <object>objects\obj_chatcover</object>
+    <object>objects\obj_textfieldcover</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">
