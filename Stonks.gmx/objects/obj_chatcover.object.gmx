@@ -26,7 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>mutation = 0;
-firsty = obj_tutorialChat.y
+loop = 0
+chaty = 0
+firsty = 0
 </string>
           </argument>
         </arguments>
@@ -49,7 +51,9 @@ firsty = obj_tutorialChat.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>chaty = obj_tutorialChat.y
+            <string>if instance_exists(obj_tutorialChat){
+chaty = obj_tutorialChat.y
+}
 if mouse_x &gt; x &amp;&amp; mouse_x &lt; x+sprite_width &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y+sprite_height{
 if chaty &lt; firsty{
 if mouse_wheel_up(){
@@ -97,6 +101,16 @@ obj_tutorialAnswer.y -= 20
 mutation -= 20;
 }
 }
+}
+}
+if instance_exists(obj_tutorialChat) &amp;&amp; loop = 0 || instance_exists(obj_tutorialAnswer) &amp;&amp; loop = 0{
+if instance_exists(obj_tutorialChat){
+firsty = obj_tutorialChat.y
+loop = 1
+}
+if instance_exists(obj_tutorialAnswer){
+firsty = obj_tutorialAnswer.y
+loop = 1
 }
 }
 </string>

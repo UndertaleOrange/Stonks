@@ -35,6 +35,10 @@ npcwriting = 1;
 person = obj_varstash.person
 loop = 0;
 loop2 = 0;
+if instance_exists(obj_tutorialResponse){
+with obj_tutorialResponse instance_destroy();
+}
+obj_varstash.lastmessage = false
 </string>
           </argument>
         </arguments>
@@ -108,6 +112,7 @@ riadok2 = floor(riadok2)
 obj_varstash.yaxis = yaxis+32+(riadok*16)
 
 }
+obj_varstash.tutorialresponses++;
 obj_controlResponse.responded = 1 
 obj_controlResponse.choice++;
 obj_controlChat.loop = 1;

@@ -67,7 +67,7 @@ y += -7
 else{
 draw = 1
 if loop = 0{
-instance_create(81,19,obj_tutorialAnswer)
+instance_create(81,13,obj_tutorialAnswer)
 instance_destroy();
 loop = 1
 }

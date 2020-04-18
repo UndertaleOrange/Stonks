@@ -78,12 +78,39 @@ sleep = 0;
 computerlogin = 0
 //tutorial vars for messenger na choice saving budeme mat iny objekt lebo to bude fes trash 
 tutorialmessages = 0;
+tutorialresponses = 0;
 xaxis = 0;
 yaxis = 0;
 downyaxis = 0;
 person = obj_tutorialRobert
 tutorialfinished = true;
 rozdiel = 0
+lastmessage = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///message choices 
+tutorialchoice[0, 0] = 0;
+tutorialchoice[0, 1] = false;
+tutorialchoice[1, 0] = 0;
+tutorialchoice[1, 1] = false;
 </string>
           </argument>
         </arguments>
@@ -106,8 +133,8 @@ rozdiel = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if downyaxis &gt;= 113{
-rozdiel = downyaxis - 113
+            <string>if downyaxis &gt;= 107{
+rozdiel = downyaxis - 107
 if instance_exists(obj_tutorialChat){
 obj_tutorialChat.y -= rozdiel;
 }

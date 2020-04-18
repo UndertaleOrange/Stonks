@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>room_goto(room_testing)
+  <code>room_goto(room_tutorialdesktop)
 instance_create(0,0,obj_time);
 instance_create(10,100,obj_sun);
 instance_create(0,0,obj_citybackgroundshader);

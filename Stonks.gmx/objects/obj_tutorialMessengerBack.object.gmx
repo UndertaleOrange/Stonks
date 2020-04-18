@@ -25,10 +25,71 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(81,19,obj_controlChat);
+            <string>instance_create(81,12,obj_controlChat);
 instance_create(0,0,obj_controlResponse);
 //instance_create(81,116,obj_tutorialChatChoice);
 //instance_create(81,201,obj_tutorialTextField);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if mouse_y &gt;= 0 &amp;&amp; mouse_y &lt;= 13{
+if (mouse_x &gt;= 426 &amp;&amp; mouse_x &lt;= 451) || (mouse_x &gt;= 454 &amp;&amp; mouse_x &lt;= 478){
+if mouse_check_button_pressed(mb_left){
+if instance_exists(obj_tutorialMessengerBack){ 
+with obj_tutorialMessengerBack instance_destroy();
+}
+if instance_exists(obj_tutorialChat){
+with obj_tutorialChat instance_destroy();
+}
+if instance_exists(obj_tutorialAnswer){
+with obj_tutorialAnswer instance_destroy();
+}
+if instance_exists(obj_tutorialRobert){
+with obj_tutorialRobert instance_destroy();
+}
+if instance_exists(obj_controlChat){
+with obj_controlChat instance_destroy();
+}
+if instance_exists(obj_controlResponse){
+with obj_controlResponse instance_destroy();
+}
+if instance_exists(obj_tutorialResponse){
+with obj_tutorialResponse instance_destroy();
+}
+if instance_exists(obj_tutorialRespond){
+with obj_tutorialRespond instance_destroy();
+}
+if instance_exists(obj_chatcover){
+with obj_chatcover instance_destroy();
+}
+if instance_exists(obj_textfieldcover){
+with obj_textfieldcover instance_destroy();
+}
+obj_varstash.yaxis = 0
+obj_varstash.xaxis = 0
+obj_varstash.downyaxis = 0;
+}
+}
+}
 </string>
           </argument>
         </arguments>

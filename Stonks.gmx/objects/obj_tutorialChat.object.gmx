@@ -36,6 +36,7 @@ npcwriting = 1;
 person = obj_varstash.person
 loop = 0;
 loop2 = 0;
+obj_varstash.lastmessage = true
 </string>
           </argument>
         </arguments>

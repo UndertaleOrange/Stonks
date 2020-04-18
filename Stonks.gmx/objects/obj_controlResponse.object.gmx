@@ -25,9 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>loop = 0;
+            <string>tutorialresponses = 0
+loop = 1;
 choice = 0;
 responded = 0;
+madechoice = 0;
+if obj_varstash.tutorialresponses != 0 &amp;&amp; obj_varstash.lastmessage = false{
+show_debug_message("bruh")
+choice = obj_varstash.tutorialresponses-1
+madechoice = obj_varstash.tutorialchoice[choice, 0]
+instance_create(81,13,obj_tutorialAnswer)
+obj_varstash.tutorialresponses -= 1
+}
 </string>
           </argument>
         </arguments>
@@ -50,16 +59,15 @@ responded = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if loop = 1{
+            <string>show_debug_message(obj_varstash.tutorialresponses)
+if loop = 1{
 switch (obj_varstash.tutorialmessages){
 case 0: break;
 case 1: break;
-case 2: if obj_controlResponse.responded = 0{ instance_create(81,116,obj_tutorialResponse); } break;
-default: 
-
+case 2: if obj_controlResponse.responded = 0 &amp;&amp; obj_varstash.tutorialresponses = 0{ instance_create(81,110,obj_tutorialResponse); } break;
+case 3: break;
+default: break;
 }
-
-
 loop = 0
 }
 </string>
