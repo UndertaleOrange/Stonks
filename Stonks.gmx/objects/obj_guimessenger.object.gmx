@@ -32,6 +32,17 @@ instance_create(0,0,obj_tutorialRobert)
 instance_create(0,0,obj_tutorialMessengerBack)
 instance_create(81,13,obj_chatcover)
 instance_create(85,199,obj_textfieldcover)
+if instance_exists(obj_browsertext){
+with obj_browsertext instance_destroy()
+}
+if instance_exists(obj_messagetext){
+with obj_messagetext instance_destroy()
+}
+with obj_tutorialsystemgui instance_destroy()
+with obj_guibrowser instance_destroy();
+with obj_guimessenger instance_destroy();
+with obj_systemshutdown instance_destroy();
+with obj_systemguishader instance_destroy();
 }
 }
 }

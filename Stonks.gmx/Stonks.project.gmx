@@ -226,6 +226,7 @@
     <sprite>sprites\spr_tutorialprofile</sprite>
     <sprite>sprites\spr_textfieldcover</sprite>
     <sprite>sprites\spr_chatcover</sprite>
+    <sprite>sprites\spr_browserback</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -439,6 +440,7 @@
     <object>objects\obj_tutorialRespond</object>
     <object>objects\obj_chatcover</object>
     <object>objects\obj_textfieldcover</object>
+    <object>objects\obj_browserback</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">

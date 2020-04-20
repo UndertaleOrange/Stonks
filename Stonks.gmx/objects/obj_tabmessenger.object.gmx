@@ -7,7 +7,46 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
+if mouse_check_button_pressed(mb_left){
+if !instance_exists(obj_tutorialMessengerBack){
+instance_create(0,0,obj_tutorialRobert)
+instance_create(0,0,obj_tutorialMessengerBack)
+instance_create(81,13,obj_chatcover)
+instance_create(85,199,obj_textfieldcover)
+if instance_exists(obj_browsertext){
+with obj_browsertext instance_destroy()
+}
+if instance_exists(obj_messagetext){
+with obj_messagetext instance_destroy()
+}
+}
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

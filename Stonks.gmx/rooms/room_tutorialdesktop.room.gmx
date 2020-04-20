@@ -59,7 +59,7 @@ instance_create(0,0,obj_tutorialRobert)</code>
     <instance objName="obj_tabbrowser" x="40" y="232" name="inst_392BB346" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tabmessenger" x="80" y="232" name="inst_71517DB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_browsertext" x="4" y="4" name="inst_9A333542" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_messagetext" x="3" y="62" name="inst_2AF4FF3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_messagetext" x="4" y="62" name="inst_2AF4FF3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
