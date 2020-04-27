@@ -30,11 +30,34 @@ if mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 if mouse_check_button_pressed(mb_left){
 instance_create(4,4,obj_browsertext)
 instance_create(4,62,obj_messagetext)
+if instance_exists(obj_browserTextField){ with obj_browserTextField instance_destroy(); }
+if obj_varstash.onsite = -1{
+with obj_notfound instance_destroy()
+}
+else if obj_varstash.onsite != -2{
+with obj_varstash.websiteobject[obj_varstash.onsite] instance_destroy()
+}
 instance_destroy()
 }
 }
 }
-
+if mouse_x &gt;= 6 &amp;&amp; mouse_y &gt;= 38 &amp;&amp; mouse_x &lt;= 99 &amp;&amp; mouse_y &lt;= 89{
+if mouse_check_button_pressed(mb_left){
+obj_browserTextField.text = "stonks.com"
+obj_browserTextField.enter = 1
+}
+}
+if mouse_x &gt;= 17 &amp;&amp; mouse_y &gt;= 15 &amp;&amp; mouse_x &lt;= 33 &amp;&amp; mouse_y &lt;= 31{
+if mouse_check_button_pressed(mb_left){
+obj_browserTextField.text = ""
+if obj_varstash.onsite = -1{
+with obj_notfound instance_destroy()
+}
+else if obj_varstash.onsite != -2{
+with obj_varstash.websiteobject[obj_varstash.onsite] instance_destroy()
+}
+}
+}
 </string>
           </argument>
         </arguments>

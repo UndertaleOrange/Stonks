@@ -226,7 +226,12 @@
     <sprite>sprites\spr_tutorialprofile</sprite>
     <sprite>sprites\spr_textfieldcover</sprite>
     <sprite>sprites\spr_chatcover</sprite>
+    <sprite>sprites\spr_browserbackTerminal</sprite>
     <sprite>sprites\spr_browserback</sprite>
+    <sprite>sprites\spr_browserTextField</sprite>
+    <sprite>sprites\spr_notfound</sprite>
+    <sprite>sprites\spr_omniqubesite</sprite>
+    <sprite>sprites\spr_stonkssite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -441,6 +446,10 @@
     <object>objects\obj_chatcover</object>
     <object>objects\obj_textfieldcover</object>
     <object>objects\obj_browserback</object>
+    <object>objects\obj_browserTextField</object>
+    <object>objects\obj_notfound</object>
+    <object>objects\obj_stonkssite</object>
+    <object>objects\obj_omniqubesite</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">

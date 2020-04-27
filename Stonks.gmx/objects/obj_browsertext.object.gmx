@@ -78,12 +78,15 @@ pressed = false
             <string>if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 if mouse_check_button_released(mb_left){
 pressed = true
+obj_messagetext.pressed = false
+}
 }
 if pressed = true{
 timeout++
-if timeout &gt;= 1 &amp;&amp; timeout &lt;= needed &amp;&amp; mouse_check_button_pressed(mb_left){
+if timeout &gt;= 1 &amp;&amp; timeout &lt;= needed &amp;&amp; mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 if !instance_exists(obj_browserback){
 instance_create(0,0,obj_browserback)
+instance_create(46,14,obj_browserTextField)
 with obj_browsertext instance_destroy()
 if instance_exists(obj_messagetext){
 with obj_messagetext instance_destroy()
@@ -96,7 +99,7 @@ timeout = 0
 }
 
 }
-}
+
 
 </string>
           </argument>
@@ -125,6 +128,31 @@ if pressed = true{
 draw_set_alpha(0.25)
 draw_rectangle_colour(x-4,y-4,x+sprite_width+4,y+sprite_height+4,c_blue,c_blue,c_blue,c_blue,false);
 draw_set_alpha(1)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if pressed = true{
+text = "" + keyboard_string;
 }
 </string>
           </argument>
