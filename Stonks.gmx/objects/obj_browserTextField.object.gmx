@@ -260,6 +260,11 @@ if keyboard_check(vk_enter){
 enter = 1
 }
 if enter = 1{
+//if string_length(text) &gt; 0{
+//if string_char_at(text,string_length(text)-1) == " "{
+//string_delete(text,string_length(text)-1,1)
+//}
+//}
 if line &lt; 478{
 line += 478/30
 }

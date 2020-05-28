@@ -232,6 +232,9 @@
     <sprite>sprites\spr_notfound</sprite>
     <sprite>sprites\spr_omniqubesite</sprite>
     <sprite>sprites\spr_stonkssite</sprite>
+    <sprite>sprites\spr_stonksTable</sprite>
+    <sprite>sprites\spr_tutorialGraph1</sprite>
+    <sprite>sprites\spr_stonksTableDescription</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -450,6 +453,8 @@
     <object>objects\obj_notfound</object>
     <object>objects\obj_stonkssite</object>
     <object>objects\obj_omniqubesite</object>
+    <object>objects\obj_stonkssiteprofile</object>
+    <object>objects\obj_stonksSiteGraphsControl</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">
