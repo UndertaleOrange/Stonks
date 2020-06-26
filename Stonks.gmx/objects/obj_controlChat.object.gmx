@@ -60,13 +60,14 @@ switch (obj_varstash.tutorialmessages)
 {
 case 0: instance_create(81,13,obj_tutorialChat); break;
 case 1: instance_create(81,13,obj_tutorialChat); break;
-case 2: break;
+case 2: if obj_controlResponse.responded = 1 &amp;&amp; obj_varstash.tutorialresponses = 1{ instance_create(81,13,obj_tutorialChat); xd = 1 }break;
 default: break;
 
 
 }
 loop = 0;
 }
+
 </string>
           </argument>
         </arguments>

@@ -33,6 +33,7 @@ show_debug_message(dlzka)
 riadok = dlzka/25 - 1.000000000000001
 riadok = floor(riadok)
 riadok = 0;
+
 </string>
           </argument>
         </arguments>

@@ -25,9 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>message[0] = "bruh."
-message[1] = "SO GUYS WE DID IT."
-message[2] = "bruh"
+            <string>message[0] = "Well-met!"
+message[1] = "I found something that's worth#checking."
+//Našiel som dobrú firmu, ktorá má zajtra podpísať zmluvu s obrovskou firmou. Mám tam bratranca, ktorý pracuje v tej 
+//firme preto o tom viem. Firma sa volá Tlakacs's gym a akcie majú na stonks.com
+message[2] = "I made a great investment.#There is a firm that is signing#a deal with a giant tomorrow.#My cousin is working there so it's solid#info. The company is called#Tlakacs's gym and they have it all#on Stonks.com."
 message[3] = "bruh"
 message[4] = "bruh"
 message[5] = "bruh"
@@ -36,13 +38,13 @@ message[7] = "bruh"
 message[8] = "bruh"
 message[9] = "bruh"
 //
-response[0, 0] = "option 1 # teyxt"
-response[0, 1] = "option 2 # teyxt"
-response[0, 2] = "option 3 # teyxt"
+response[0, 0] = "Go with a normal 'Hi'."
+response[0, 1] = "Just say 'Hello' and ask."
+response[0, 2] = "Pretend that you are a Grand #Wizard."
 //
-respond[0, 0] = "Frodo preco mas hore cannibal#club a holocaust depr#skrekrkkrkrkrkrkrk"
-respond[0, 1] = "option 2 # teyxt"
-respond[0, 2] = "option 3 # teyxt"
+respond[0, 0] = "Hi, what is it?"
+respond[0, 1] = "Hello, what are you talking about?"
+respond[0, 2] = "Greetings, what are thou speaking #of?"
 </string>
           </argument>
         </arguments>

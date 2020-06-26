@@ -72,6 +72,7 @@ draw_roundrect_ext(x+xaxis-16,y+yaxis,x+xaxis-16-16-7*string_length(response),y+
 if loop2 = 0{
 obj_varstash.downyaxis = y+yaxis+32
 loop2 = 1
+riadok = 0
 }
 }
 else{

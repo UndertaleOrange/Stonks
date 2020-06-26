@@ -37,6 +37,9 @@ person = obj_varstash.person
 loop = 0;
 loop2 = 0;
 obj_varstash.lastmessage = true
+riadok = 0
+xd = 0
+pre = 0
 </string>
           </argument>
         </arguments>
@@ -71,6 +74,7 @@ if shake = -4{
 a = 0
 }
 }
+show_debug_message(xd)
 </string>
           </argument>
         </arguments>
@@ -123,6 +127,11 @@ loop2 = 1
 }
 else{
 dlzka = (string_length(person.message[messages]) - floor((string_length(person.message[messages])/25)-1))
+for(pre = 0; pre &lt; string_length(person.message[messages]); pre++){
+if string_char_at(string_length(person.message[messages]),pre){
+xd++
+}
+}
 riadok = dlzka/25 - 1.000000000000001
 riadok = floor(riadok)
 draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*25,y+yaxis+32+(riadok*16),8,8,0)

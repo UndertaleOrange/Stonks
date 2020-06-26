@@ -171,6 +171,7 @@ obj_tutorialAnswer.y -= rozdiel;
 }
 downyaxis -= rozdiel
 }
+
 </string>
           </argument>
         </arguments>
