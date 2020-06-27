@@ -149,6 +149,7 @@
       <sprite>sprites\spr_solidrect_rb</sprite>
       <sprite>sprites\spr_computerarea</sprite>
       <sprite>sprites\spr_solidrect_lb</sprite>
+      <sprite>sprites\spr_debug</sprite>
       <sprite>sprites\spr_field</sprite>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_E</sprite>
@@ -265,6 +266,7 @@
     <font>fonts\font13</font>
     <font>fonts\font14</font>
     <font>fonts\font15</font>
+    <font>fonts\font16</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -403,6 +405,12 @@
         <object>objects\obj_player</object>
       </objects>
       <object>objects\obj_fadein</object>
+      <objects name="Optimization">
+        <object>objects\obj_ftime</object>
+      </objects>
+      <objects name="Debug">
+        <object>objects\dev_dbgmgr</object>
+      </objects>
       <object>objects\obj_fadeout</object>
       <object>objects\obj_omniqube</object>
       <object>objects\obj_testfadeout</object>

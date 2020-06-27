@@ -63,6 +63,8 @@ window_set_size(1440,810)
     <instance objName="HOSTCONSOLE" x="0" y="128" name="inst_B9064395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_omniqube" x="0" y="0" name="inst_7BD593CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_questsystem" x="0" y="160" name="inst_A736B38D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="dev_dbgmgr" x="0" y="192" name="inst_1ACF2E5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ftime" x="16" y="192" name="inst_389093AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
