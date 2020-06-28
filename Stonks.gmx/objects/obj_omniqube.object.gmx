@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// FlatBlade System Information Diagnostics Tool
+            <string>/// FlatBlade System Information Diagnostics Tool
 
-if debug_mode {exit}
+if debug_mode {
+gml_release_mode(true);
+exit;
+}
 gml_release_mode(true);
 
 /* Windows NT System Variables
