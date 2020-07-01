@@ -40,6 +40,8 @@ obj_varstash.lastmessage = true
 riadok = 0
 xd = 0
 pre = 0
+kolecko = 0
+hashtag = 0
 </string>
           </argument>
         </arguments>
@@ -74,7 +76,13 @@ if shake = -4{
 a = 0
 }
 }
-show_debug_message(xd)
+for (z = 0; z &lt; string_length(person.message[obj_varstash.tutorialmessages]); z++){
+if string_char_at(person.message[obj_varstash.tutorialmessages],z) == "#"{
+hashtag += 1
+show_debug_message(person.message[obj_varstash.tutorialmessages])
+}
+}
+
 </string>
           </argument>
         </arguments>
@@ -111,6 +119,10 @@ obj_tutorialAnswer.y += obj_chatcover.mutation
 }
 obj_chatcover.mutation = 0
 }
+if kolecko = 0{
+obj_varstash.downyaxis = y+yaxis+32
+kolecko = 1
+}
 }
 draw_sprite(spr_tutorialprofile,0,x+xaxis-36,y+yaxis)
 //
@@ -121,20 +133,14 @@ draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,fal
 if string_length(person.message[messages]) &lt;= 25{
 draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*string_length(person.message[messages]),y+yaxis+32,8,8,0)
 if loop2 = 0{
-obj_varstash.downyaxis = y+yaxis+32
+//obj_varstash.downyaxis = y+yaxis+32
 loop2 = 1
 }
 }
 else{
-dlzka = (string_length(person.message[messages]) - floor((string_length(person.message[messages])/25)-1))
-for(pre = 0; pre &lt; string_length(person.message[messages]); pre++){
-if string_char_at(string_length(person.message[messages]),pre){
-xd++
-}
-}
-riadok = dlzka/25 - 1.000000000000001
+riadok = hashtag - 1.000000000000001
 riadok = floor(riadok)
-draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*25,y+yaxis+32+(riadok*16),8,8,0)
+draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+725,y+yaxis+32+(riadok*16),8,8,0)
 if loop2 = 0{
 obj_varstash.downyaxis = y+yaxis+32+(riadok*16);
 loop2 = 1
@@ -162,8 +168,7 @@ obj_varstash.yaxis = yaxis+32
 
 }
 else{
-dlzka2 = (string_length(person.message[obj_varstash.tutorialmessages]) - floor((string_length(person.message[obj_varstash.tutorialmessages])/25)-1))
-riadok2 = dlzka2/25 - 1.000000000000001
+riadok2 = hashtag - 1.000000000000001
 riadok2 = floor(riadok2)
 obj_varstash.yaxis = yaxis+32//+(riadok2*16)
 
