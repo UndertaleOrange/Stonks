@@ -246,6 +246,17 @@
     <path>paths\path_menu</path>
     <path>paths\path_loading</path>
   </paths>
+  <scripts name="scripts">
+    <scripts name="Engine">
+      <script>scripts\pctype.gml</script>
+    </scripts>
+    <scripts name="Math (Legacy)">
+      <script>scripts\wave.gml</script>
+      <script>scripts\chance.gml</script>
+      <script>scripts\wrap.gml</script>
+      <script>scripts\approach.gml</script>
+    </scripts>
+  </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
