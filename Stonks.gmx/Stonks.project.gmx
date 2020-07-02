@@ -248,14 +248,35 @@
   </paths>
   <scripts name="scripts">
     <scripts name="Engine">
+      <scripts name="Math (Legacy)">
+        <script>scripts\chance.gml</script>
+        <script>scripts\wave.gml</script>
+        <script>scripts\wrap.gml</script>
+        <script>scripts\approach.gml</script>
+      </scripts>
+      <scripts name="Filesystem">
+        <script>scripts\file_bin_write_word.gml</script>
+        <script>scripts\file_text_open_read_all.gml</script>
+        <script>scripts\file_text_open_write_all.gml</script>
+        <script>scripts\file_bin_read_word.gml</script>
+      </scripts>
+      <scripts name="Graphics">
+        <scripts name="Dynamic Edtor">
+          <script>scripts\sprite_edit_end.gml</script>
+          <script>scripts\sprite_edit_begin.gml</script>
+        </scripts>
+        <scripts name="Shader (Non-Realtime)">
+          <script>scripts\sprite_replace_color_blend.gml</script>
+          <script>scripts\sprite_replace_color.gml</script>
+        </scripts>
+        <script>scripts\sprite_invert_color.gml</script>
+        <script>scripts\sprite_desaturate.gml</script>
+      </scripts>
+      <script>scripts\screenshot.gml</script>
       <script>scripts\pctype.gml</script>
     </scripts>
-    <scripts name="Math (Legacy)">
-      <script>scripts\wave.gml</script>
-      <script>scripts\chance.gml</script>
-      <script>scripts\wrap.gml</script>
-      <script>scripts\approach.gml</script>
-    </scripts>
+    <script>scripts\move_follow.gml</script>
+    <script>scripts\jump_to_mouse.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
