@@ -39,6 +39,7 @@ if instance_exists(obj_tutorialResponse){
 with obj_tutorialResponse instance_destroy();
 }
 obj_varstash.lastmessage = false
+show_debug_message(obj_varstash.lastmessage)
 </string>
           </argument>
         </arguments>
@@ -93,6 +94,7 @@ else{
 draw_text(x+xaxis-16-16-7*25+8,y+yaxis+4,response);
 }
 if loop = 0{
+
 if obj_chatcover.mutation != 0{
 if instance_exists(obj_tutorialChat){
 obj_tutorialChat.y += obj_chatcover.mutation
@@ -120,6 +122,8 @@ obj_controlChat.loop = 1;
 obj_controlResponse.loop = 1;
 loop = 1
 obj_controlResponse.responded = 1 
+obj_varstash.lastmessage = false
+show_debug_message(obj_varstash.tutorialresponses)
 }
 
 

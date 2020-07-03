@@ -29,6 +29,7 @@
 loop = 1;
 madechoice = 0;
 if obj_varstash.tutorialmessages != 0 &amp;&amp; obj_varstash.lastmessage = true{
+
 obj_varstash.tutorialmessages -= 1
 }
 

@@ -45,9 +45,9 @@ hashtag = 0
 for (z = 0; z &lt; string_length(person.message[obj_varstash.tutorialmessages]); z++){
 if string_char_at(person.message[obj_varstash.tutorialmessages],z) == "#"{
 hashtag += 1
-show_debug_message(hashtag)
 }
 }
+obj_varstash.lastmessage = true
 
 </string>
           </argument>
