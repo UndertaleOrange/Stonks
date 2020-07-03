@@ -6,7 +6,6 @@
 //      size        size of the word in bytes, real
 //      bigend      true to use big-endian byte order (MSB first), bool
 //
-/// GMLscripts.com/license
 {
     var file,size,bigend,value,i,b;
     file = argument0;

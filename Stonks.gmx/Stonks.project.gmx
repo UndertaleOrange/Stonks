@@ -267,16 +267,41 @@
         </scripts>
         <scripts name="Shader (Non-Realtime)">
           <script>scripts\sprite_replace_color_blend.gml</script>
+          <script>scripts\motion_blur.gml</script>
           <script>scripts\sprite_replace_color.gml</script>
         </scripts>
+        <script>scripts\draw_background_tiled_area.gml</script>
+        <script>scripts\draw_sprite_tiled_area.gml</script>
+        <scripts name="Color">
+          <script>scripts\make_color_random.gml</script>
+          <script>scripts\merge_color_squared.gml</script>
+          <script>scripts\merge_colors.gml</script>
+          <script>scripts\color_multiply.gml</script>
+          <script>scripts\color_mix.gml</script>
+        </scripts>
         <script>scripts\sprite_invert_color.gml</script>
+        <script>scripts\draw_sprite_hud.gml</script>
         <script>scripts\sprite_desaturate.gml</script>
+        <scripts name="Text">
+          <script>scripts\draw_text_hud.gml</script>
+          <script>scripts\draw_text_shadow.gml</script>
+          <script>scripts\string_wordwrap_width.gml</script>
+          <script>scripts\string_limit_width.gml</script>
+        </scripts>
       </scripts>
-      <script>scripts\screenshot.gml</script>
+      <scripts name="Data">
+        <script>scripts\array_add.gml</script>
+        <script>scripts\explode.gml</script>
+        <script>scripts\explode_real.gml</script>
+        <script>scripts\implode_real.gml</script>
+        <script>scripts\implode.gml</script>
+        <script>scripts\array.gml</script>
+      </scripts>
       <script>scripts\pctype.gml</script>
     </scripts>
     <script>scripts\move_follow.gml</script>
     <script>scripts\jump_to_mouse.gml</script>
+    <script>scripts\screenshot.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
