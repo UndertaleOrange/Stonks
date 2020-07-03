@@ -3,7 +3,76 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="2" name="datafiles"/>
+  <datafiles number="6" name="datafiles">
+    <datafile>
+      <name>OmniQube_Publisher.cer</name>
+      <exists>-1</exists>
+      <size>436</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>OmniQube_Publisher.cer</filename>
+    </datafile>
+    <datafile>
+      <name>STONKS.nfo</name>
+      <exists>-1</exists>
+      <size>2235</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>STONKS.nfo</filename>
+    </datafile>
+    <datafile>
+      <name>STONKSICO.ico</name>
+      <exists>-1</exists>
+      <size>101014</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>STONKSICO.ico</filename>
+    </datafile>
+    <datafile>
+      <name>Autorun.inf</name>
+      <exists>-1</exists>
+      <size>377</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>Autorun.inf</filename>
+    </datafile>
+  </datafiles>
   <NewExtensions>
     <extension index="0">extensions\Borderless Windowed</extension>
   </NewExtensions>
