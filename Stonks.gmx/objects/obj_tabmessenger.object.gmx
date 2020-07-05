@@ -38,6 +38,40 @@ with obj_browsertext instance_destroy()
 if instance_exists(obj_messagetext){
 with obj_messagetext instance_destroy()
 }
+obj_varstash.messenger = 1
+}
+else if obj_varstash.messenger = 0{
+if instance_exists(obj_tutorialMessengerBack){ 
+obj_tutorialMessengerBack.y += 300
+}
+if instance_exists(obj_tutorialChat){
+obj_tutorialChat.y += 300
+}
+if instance_exists(obj_tutorialAnswer){
+obj_tutorialAnswer.y += 300
+}
+if instance_exists(obj_tutorialRobert){
+obj_tutorialRobert.y += 300
+}
+if instance_exists(obj_controlChat){
+obj_controlChat.y += 300
+}
+if instance_exists(obj_controlResponse){
+obj_controlResponse.y += 300
+}
+if instance_exists(obj_tutorialResponse){
+obj_tutorialResponse.y += 300
+}
+if instance_exists(obj_tutorialRespond){
+obj_tutorialRespond.y += 300
+}
+if instance_exists(obj_chatcover){
+obj_chatcover.y += 300
+}
+if instance_exists(obj_textfieldcover){
+obj_textfieldcover.y += 300
+}
+obj_varstash.messenger = 1
 }
 }
 }

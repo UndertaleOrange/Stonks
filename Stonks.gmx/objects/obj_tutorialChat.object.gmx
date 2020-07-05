@@ -83,7 +83,7 @@ if shake = -4{
 a = 0
 }
 }
-
+show_debug_message(obj_varstash.texting)
 
 </string>
           </argument>
@@ -111,7 +111,12 @@ a = 0
 draw_set_font(tahomaBasic);
 if texting &lt;= string_length(person.message[messages])*(269 / 120){
 texting++;
+
 obj_varstash.tutorialfinished = false;
+
+if kolecko = 0{
+obj_varstash.texting = 1
+obj_varstash.downyaxis = y+yaxis+32
 if obj_chatcover.mutation != 0{
 if instance_exists(obj_tutorialChat){
 obj_tutorialChat.y += obj_chatcover.mutation
@@ -119,10 +124,8 @@ obj_tutorialChat.y += obj_chatcover.mutation
 if instance_exists(obj_tutorialAnswer){
 obj_tutorialAnswer.y += obj_chatcover.mutation
 }
-obj_chatcover.mutation = 0
+//obj_chatcover.mutation = 0
 }
-if kolecko = 0{
-obj_varstash.downyaxis = y+yaxis+32
 kolecko = 1
 }
 }
@@ -130,6 +133,7 @@ draw_sprite(spr_tutorialprofile,0,x+xaxis-36,y+yaxis)
 //
 if texting &gt; string_length(person.message[messages])*(269 / 120){
 npcwriting = 0;
+
 draw_set_color(c_ltgray)
 draw_triangle(x+xaxis,y+yaxis+16,x+xaxis+16,y+yaxis+16,x+xaxis+16,y+yaxis+24,false)
 if hashtag &lt; 2{
@@ -138,10 +142,6 @@ draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*25,y+yaxis+32,8,8,0)
 }
 else{
 draw_roundrect_ext(x+xaxis+16,y+yaxis,x+xaxis+16+16+7*string_length(person.message[messages]),y+yaxis+32,8,8,0)
-}
-if loop2 = 0{
-//obj_varstash.downyaxis = y+yaxis+32
-loop2 = 1
 }
 }
 else{
@@ -161,6 +161,7 @@ else{
 draw_text(x+xaxis+16+8,y+yaxis+3,person.message[messages]);
 }
 if loop = 0{
+obj_varstash.texting = 0
 if obj_chatcover.mutation != 0{
 if instance_exists(obj_tutorialChat){
 obj_tutorialChat.y += obj_chatcover.mutation

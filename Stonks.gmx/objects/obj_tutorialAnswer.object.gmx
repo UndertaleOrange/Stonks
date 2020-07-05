@@ -39,7 +39,6 @@ if instance_exists(obj_tutorialResponse){
 with obj_tutorialResponse instance_destroy();
 }
 obj_varstash.lastmessage = false
-show_debug_message(obj_varstash.lastmessage)
 </string>
           </argument>
         </arguments>

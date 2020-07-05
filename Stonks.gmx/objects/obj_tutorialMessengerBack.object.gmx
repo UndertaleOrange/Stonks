@@ -53,42 +53,40 @@ instance_create(0,0,obj_controlResponse);
             <kind>1</kind>
             <string>if mouse_y &gt;= 0 &amp;&amp; mouse_y &lt;= 13{
 if (mouse_x &gt;= 426 &amp;&amp; mouse_x &lt;= 451) || (mouse_x &gt;= 454 &amp;&amp; mouse_x &lt;= 480){
-if mouse_check_button_pressed(mb_left){
+if mouse_check_button_pressed(mb_left) &amp;&amp; obj_varstash.texting = 0{
 if instance_exists(obj_tutorialMessengerBack){ 
-with obj_tutorialMessengerBack instance_destroy();
+obj_tutorialMessengerBack.y -= 300
 }
 if instance_exists(obj_tutorialChat){
-with obj_tutorialChat instance_destroy();
+obj_tutorialChat.y -= 300
 }
 if instance_exists(obj_tutorialAnswer){
-with obj_tutorialAnswer instance_destroy();
+obj_tutorialAnswer.y -= 300
 }
 if instance_exists(obj_tutorialRobert){
-with obj_tutorialRobert instance_destroy();
+obj_tutorialRobert.y -= 300
 }
 if instance_exists(obj_controlChat){
-with obj_controlChat instance_destroy();
+obj_controlChat.y -= 300
 }
 if instance_exists(obj_controlResponse){
-with obj_controlResponse instance_destroy();
+obj_controlResponse.y -= 300
 }
 if instance_exists(obj_tutorialResponse){
-with obj_tutorialResponse instance_destroy();
+obj_tutorialResponse.y -= 300
 }
 if instance_exists(obj_tutorialRespond){
-with obj_tutorialRespond instance_destroy();
+obj_tutorialRespond.y -= 300
 }
 if instance_exists(obj_chatcover){
-with obj_chatcover instance_destroy();
+obj_chatcover.y -= 300
 }
 if instance_exists(obj_textfieldcover){
-with obj_textfieldcover instance_destroy();
+obj_textfieldcover.y -= 300
 }
-obj_varstash.yaxis = 0
-obj_varstash.xaxis = 0
-obj_varstash.downyaxis = 0;
 instance_create(4,4,obj_browsertext)
 instance_create(4,62,obj_messagetext)
+obj_varstash.messenger = 0
 }
 }
 }

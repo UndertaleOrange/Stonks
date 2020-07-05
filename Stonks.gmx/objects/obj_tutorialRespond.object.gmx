@@ -64,10 +64,12 @@ if riadok &gt; 2{
 y += -7
 }
 }
+obj_varstash.texting = 1
 }
 else{
 draw = 1
 if loop = 0{
+obj_varstash.texting = 0
 instance_create(81,13,obj_tutorialAnswer)
 instance_destroy();
 loop = 1

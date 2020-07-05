@@ -86,6 +86,10 @@ person = obj_tutorialRobert
 tutorialfinished = true;
 rozdiel = 0
 lastmessage = true
+//messenger on/off switch
+messenger = 0
+//gets when someone texts
+texting = 0
 </string>
           </argument>
         </arguments>
