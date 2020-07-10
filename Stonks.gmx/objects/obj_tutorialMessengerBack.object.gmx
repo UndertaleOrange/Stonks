@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -51,42 +51,44 @@ instance_create(0,0,obj_controlResponse);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_y &gt;= 0 &amp;&amp; mouse_y &lt;= 13{
+            <string>if obj_varstash.messenger = 1{
+if mouse_y &gt;= 0 &amp;&amp; mouse_y &lt;= 13{
 if (mouse_x &gt;= 426 &amp;&amp; mouse_x &lt;= 451) || (mouse_x &gt;= 454 &amp;&amp; mouse_x &lt;= 480){
-if mouse_check_button_pressed(mb_left) &amp;&amp; obj_varstash.texting = 0{
+if mouse_check_button_pressed(mb_left){ //&amp;&amp; obj_varstash.texting = 0{
 if instance_exists(obj_tutorialMessengerBack){ 
-obj_tutorialMessengerBack.y -= 300
+obj_tutorialMessengerBack.x -= 10600
 }
 if instance_exists(obj_tutorialChat){
-obj_tutorialChat.y -= 300
+obj_tutorialChat.x -= 10600
 }
 if instance_exists(obj_tutorialAnswer){
-obj_tutorialAnswer.y -= 300
+obj_tutorialAnswer.x -= 10600
 }
 if instance_exists(obj_tutorialRobert){
-obj_tutorialRobert.y -= 300
+obj_tutorialRobert.x -= 10600
 }
 if instance_exists(obj_controlChat){
-obj_controlChat.y -= 300
+obj_controlChat.x -= 10600
 }
 if instance_exists(obj_controlResponse){
-obj_controlResponse.y -= 300
+obj_controlResponse.x -= 10600
 }
 if instance_exists(obj_tutorialResponse){
-obj_tutorialResponse.y -= 300
+obj_tutorialResponse.x -= 10600
 }
 if instance_exists(obj_tutorialRespond){
-obj_tutorialRespond.y -= 300
+obj_tutorialRespond.x -= 10600
 }
 if instance_exists(obj_chatcover){
-obj_chatcover.y -= 300
+obj_chatcover.x -= 10600
 }
 if instance_exists(obj_textfieldcover){
-obj_textfieldcover.y -= 300
+obj_textfieldcover.x -= 10600
 }
 instance_create(4,4,obj_browsertext)
 instance_create(4,62,obj_messagetext)
 obj_varstash.messenger = 0
+}
 }
 }
 }

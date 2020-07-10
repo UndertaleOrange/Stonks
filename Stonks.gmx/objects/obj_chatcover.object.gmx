@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>2</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -51,7 +51,8 @@ firsty = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(obj_tutorialChat){
+            <string>if obj_varstash.messenger = 1{
+if instance_exists(obj_tutorialChat){
 chaty = obj_tutorialChat.y
 }
 if mouse_x &gt; x &amp;&amp; mouse_x &lt; x+sprite_width &amp;&amp; mouse_y &gt; y &amp;&amp; mouse_y &lt; y+sprite_height{
@@ -62,7 +63,7 @@ if instance_exists(obj_tutorialChat){
 obj_tutorialChat.depth = 3
 }
 if instance_exists(obj_textfieldcover){
-obj_textfieldcover.depth = 2
+obj_textfieldcover.depth = 0
 }
 if instance_exists(obj_tutorialRespond){
 obj_tutorialRespond.depth = 1
@@ -111,6 +112,7 @@ loop = 1
 if instance_exists(obj_tutorialAnswer){
 firsty = obj_tutorialAnswer.y
 loop = 1
+}
 }
 }
 </string>

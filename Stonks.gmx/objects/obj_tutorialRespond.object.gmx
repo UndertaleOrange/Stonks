@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>1</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -56,7 +56,8 @@ riadok = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if i &lt; string_length(obj_tutorialRobert.respond[obj_controlResponse.choice, obj_controlResponse.madechoice]){
+            <string>if obj_varstash.messenger = 1{
+if i &lt; string_length(obj_tutorialRobert.respond[obj_controlResponse.choice, obj_controlResponse.madechoice]){
 i += 120 / 269;
 if string_char_at(obj_tutorialRobert.respond[obj_controlResponse.choice, obj_controlResponse.madechoice], i) = "#"{
 riadok++
@@ -75,7 +76,7 @@ instance_destroy();
 loop = 1
 }
 }
-
+}
 </string>
           </argument>
         </arguments>
@@ -98,7 +99,8 @@ loop = 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if draw = 0{
+            <string>if obj_varstash.messenger = 1{
+if draw = 0{
 if instance_exists(obj_chatcover){
 depth = 2
 }
@@ -114,6 +116,7 @@ draw_text(x,y,string_copy(obj_tutorialRobert.respond[obj_controlResponse.choice,
 }
 else{
 //
+}
 }
 </string>
           </argument>

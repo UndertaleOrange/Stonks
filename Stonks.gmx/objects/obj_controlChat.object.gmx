@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -55,7 +55,7 @@ obj_varstash.tutorialmessages -= 1
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if obj_varstash.messenger = 1{
 if loop = 1{
 switch (obj_varstash.tutorialmessages)
 {
@@ -68,6 +68,8 @@ default: break;
 }
 loop = 0;
 }
+}
+show_debug_message(obj_varstash.tutorialresponses);
 
 </string>
           </argument>

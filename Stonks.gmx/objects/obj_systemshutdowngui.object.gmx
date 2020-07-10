@@ -52,6 +52,39 @@
 if mouse_y &lt;= y+sprite_height/2{
 image_index = 1
 if mouse_check_button_pressed(mb_left){
+if obj_varstash.messenger = 1{
+if instance_exists(obj_tutorialMessengerBack){ 
+obj_tutorialMessengerBack.x -= 10600
+}
+if instance_exists(obj_tutorialChat){
+obj_tutorialChat.x -= 10600
+}
+if instance_exists(obj_tutorialAnswer){
+obj_tutorialAnswer.x -= 10600
+}
+if instance_exists(obj_tutorialRobert){
+obj_tutorialRobert.x -= 10600
+}
+if instance_exists(obj_controlChat){
+obj_controlChat.x -= 10600
+}
+if instance_exists(obj_controlResponse){
+obj_controlResponse.x -= 10600
+}
+if instance_exists(obj_tutorialResponse){
+obj_tutorialResponse.x -= 10600
+}
+if instance_exists(obj_tutorialRespond){
+obj_tutorialRespond.x -= 10600
+}
+if instance_exists(obj_chatcover){
+obj_chatcover.x -= 10600
+}
+if instance_exists(obj_textfieldcover){
+obj_textfieldcover.x -= 10600
+}
+obj_varstash.messenger = 0
+}
 show_debug_message("Shutdown");
 room_persistent = false;
 obj_varstash.sleep = 0

@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>1</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -61,7 +61,8 @@ obj_varstash.lastmessage = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_self();
+            <string>if obj_varstash.messenger = 1{
+//draw_self();
 draw_set_font(tahomaBasic);
 draw_sprite(spr_tutorialprofile,0,x+xaxis+2,y+yaxis)
 //
@@ -124,7 +125,7 @@ obj_controlResponse.responded = 1
 obj_varstash.lastmessage = false
 show_debug_message(obj_varstash.tutorialresponses)
 }
-
+}
 
 
 </string>

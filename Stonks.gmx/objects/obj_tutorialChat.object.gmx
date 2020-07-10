@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>1</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -48,6 +48,7 @@ hashtag += 1
 }
 }
 obj_varstash.lastmessage = true
+obj_controlResponse.responded = 0
 
 </string>
           </argument>
@@ -71,7 +72,8 @@ obj_varstash.lastmessage = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if a = 0{
+            <string>if obj_varstash.messenger = 1{
+if a = 0{
 shake += 0.5
 if shake = 4{
 a = 1
@@ -83,8 +85,7 @@ if shake = -4{
 a = 0
 }
 }
-show_debug_message(obj_varstash.texting)
-
+}
 </string>
           </argument>
         </arguments>
@@ -107,7 +108,8 @@ show_debug_message(obj_varstash.texting)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_self();
+            <string>if obj_varstash.messenger = 1{
+//draw_self();
 draw_set_font(tahomaBasic);
 if texting &lt;= string_length(person.message[messages])*(269 / 120){
 texting++;
@@ -197,6 +199,7 @@ draw_circle(x+xaxis+26,y+yaxis+17+shake,4,false)
 draw_circle(x+xaxis+26+15,y+yaxis+17+(-shake),4,false)
 draw_circle(x+xaxis+26+30,y+yaxis+17+shake,4,false)
 draw_set_color(c_white);
+}
 }
 </string>
           </argument>

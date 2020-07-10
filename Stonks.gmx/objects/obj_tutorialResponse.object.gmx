@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-1</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -50,7 +50,8 @@ choosed = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x+279 &amp;&amp; mouse_y &gt; y+4 &amp;&amp; mouse_y &lt; y+28){
+            <string>if obj_varstash.messenger = 1{
+if (mouse_x &gt; x &amp;&amp; mouse_x &lt; x+279 &amp;&amp; mouse_y &gt; y+4 &amp;&amp; mouse_y &lt; y+28){
 image_alpha = 0.4;
 draw_rectangle_colour(x,y+4,x+279,y+28,collight,collight,col,col,false);
 if mouse_check_button_pressed(mb_left){
@@ -89,6 +90,7 @@ choosed = true
 }
 }
 }
+}
 </string>
           </argument>
         </arguments>
@@ -109,10 +111,12 @@ choosed = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = 1
-draw_text(x+4,y+4,obj_tutorialRobert.response[0, 0]);
-draw_text(x+4,y+29,obj_tutorialRobert.response[0, 1]);
-draw_text(x+4,y+54,obj_tutorialRobert.response[0, 2]);
+            <string>if obj_varstash.messenger = 1{
+image_alpha = 1
+draw_text(x+4,y+4,obj_tutorialRobert.response[obj_varstash.tutorialresponses, 0]);
+draw_text(x+4,y+29,obj_tutorialRobert.response[obj_varstash.tutorialresponses, 1]);
+draw_text(x+4,y+54,obj_tutorialRobert.response[obj_varstash.tutorialresponses, 2]);
+}
 </string>
           </argument>
         </arguments>
