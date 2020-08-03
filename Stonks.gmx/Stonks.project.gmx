@@ -305,6 +305,11 @@
     <sprite>sprites\spr_stonksTable</sprite>
     <sprite>sprites\spr_tutorialGraph1</sprite>
     <sprite>sprites\spr_stonksTableDescription</sprite>
+    <sprite>sprites\spr_blackshade</sprite>
+    <sprite>sprites\spr_tutorialbox</sprite>
+    <sprite>sprites\spr_next</sprite>
+    <sprite>sprites\spr_last</sprite>
+    <sprite>sprites\spr_finish</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -393,6 +398,8 @@
     <font>fonts\font14</font>
     <font>fonts\font15</font>
     <font>fonts\font16</font>
+    <font>fonts\font17</font>
+    <font>fonts\font18</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -589,6 +596,11 @@
     <object>objects\obj_omniqubesite</object>
     <object>objects\obj_stonkssiteprofile</object>
     <object>objects\obj_stonksSiteGraphsControl</object>
+    <object>objects\obj_blackshade</object>
+    <object>objects\obj_tutorialbox</object>
+    <object>objects\obj_tutorialnext</object>
+    <object>objects\obj_tutorialprevious</object>
+    <object>objects\obj_tutorialfinish</object>
   </objects>
   <rooms name="rooms">
     <rooms name="Engine">

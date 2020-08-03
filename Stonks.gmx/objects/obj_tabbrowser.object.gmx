@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
+            <string>if !instance_exists(obj_blackshade){
+if mouse_x &gt;= x and mouse_x &lt;= x+sprite_width and mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 if mouse_check_button_pressed(mb_left){
 if !instance_exists(obj_browserback){
 instance_create(0,0,obj_browserback)
@@ -36,10 +37,43 @@ with obj_browsertext instance_destroy()
 if instance_exists(obj_messagetext){
 with obj_messagetext instance_destroy()
 }
+if obj_varstash.messenger = 1{
+if instance_exists(obj_tutorialMessengerBack){ 
+obj_tutorialMessengerBack.x -= 10600
+}
+if instance_exists(obj_tutorialChat){
+obj_tutorialChat.x -= 10600
+}
+if instance_exists(obj_tutorialAnswer){
+obj_tutorialAnswer.x -= 10600
+}
+if instance_exists(obj_tutorialRobert){
+obj_tutorialRobert.x -= 10600
+}
+if instance_exists(obj_controlChat){
+obj_controlChat.x -= 10600
+}
+if instance_exists(obj_controlResponse){
+obj_controlResponse.x -= 10600
+}
+if instance_exists(obj_tutorialResponse){
+obj_tutorialResponse.x -= 10600
+}
+if instance_exists(obj_tutorialRespond){
+obj_tutorialRespond.x -= 10600
+}
+if instance_exists(obj_chatcover){
+obj_chatcover.x -= 10600
+}
+if instance_exists(obj_textfieldcover){
+obj_textfieldcover.x -= 10600
+}
+obj_varstash.messenger = 0
 }
 }
 }
-
+}
+}
 </string>
           </argument>
         </arguments>

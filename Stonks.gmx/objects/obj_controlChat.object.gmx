@@ -69,7 +69,7 @@ default: break;
 loop = 0;
 }
 }
-show_debug_message(obj_varstash.tutorialresponses);
+
 
 </string>
           </argument>

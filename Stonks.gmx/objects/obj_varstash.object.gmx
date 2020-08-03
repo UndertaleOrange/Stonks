@@ -90,6 +90,8 @@ lastmessage = true
 messenger = 0
 //gets when someone texts
 texting = 0
+//firstrun on messenger for tutorial
+firstrunmess = 1
 </string>
           </argument>
         </arguments>

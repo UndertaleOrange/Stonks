@@ -43,9 +43,11 @@ with obj_guibrowser instance_destroy();
 with obj_guimessenger instance_destroy();
 with obj_systemshutdown instance_destroy();
 with obj_systemguishader instance_destroy();
-obj_varstash.messenger = 1
+if instance_exists(obj_browserback){
+with obj_browserback instance_destroy()
 }
-else if obj_varstash.messenger = 0{
+}
+if obj_varstash.messenger = 0{
 if instance_exists(obj_tutorialMessengerBack){ 
 obj_tutorialMessengerBack.x += 10600
 }
@@ -75,6 +77,14 @@ obj_chatcover.x += 10600
 }
 if instance_exists(obj_textfieldcover){
 obj_textfieldcover.x += 10600
+}
+with obj_tutorialsystemgui instance_destroy()
+with obj_guibrowser instance_destroy();
+with obj_guimessenger instance_destroy();
+with obj_systemshutdown instance_destroy();
+with obj_systemguishader instance_destroy();
+if instance_exists(obj_browserback){
+with obj_browserback instance_destroy()
 }
 obj_varstash.messenger = 1
 }

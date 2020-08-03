@@ -29,6 +29,7 @@
 instance_create(0,0,obj_controlResponse);
 //instance_create(81,116,obj_tutorialChatChoice);
 //instance_create(81,201,obj_tutorialTextField);
+loop = 0
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,15 @@ instance_create(0,0,obj_controlResponse);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if obj_varstash.messenger = 1{
+            <string>if obj_varstash.firstrunmess = 1{
+obj_varstash.messenger = 0
+if loop = 0{
+instance_create(0,0,obj_blackshade)
+instance_create(50,75,obj_tutorialbox)
+loop = 1
+}
+}
+if obj_varstash.messenger = 1{
 if mouse_y &gt;= 0 &amp;&amp; mouse_y &lt;= 13{
 if (mouse_x &gt;= 426 &amp;&amp; mouse_x &lt;= 451) || (mouse_x &gt;= 454 &amp;&amp; mouse_x &lt;= 480){
 if mouse_check_button_pressed(mb_left){ //&amp;&amp; obj_varstash.texting = 0{
@@ -92,6 +101,7 @@ obj_varstash.messenger = 0
 }
 }
 }
+show_debug_message(obj_varstash.messenger)
 </string>
           </argument>
         </arguments>
