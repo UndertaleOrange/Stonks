@@ -30,7 +30,9 @@ if mouse_y &gt;= y and mouse_y &lt;= y+sprite_height{
 if mouse_check_button_pressed(mb_left){
 instance_create(4,4,obj_browsertext)
 instance_create(4,62,obj_messagetext)
-if instance_exists(obj_browserTextField){ with obj_browserTextField instance_destroy(); }
+if instance_exists(obj_browserTextField){
+ with obj_browserTextField instance_destroy(); 
+}
 if obj_varstash.onsite = -1{
 with obj_notfound instance_destroy()
 }
