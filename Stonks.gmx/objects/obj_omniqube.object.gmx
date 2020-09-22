@@ -132,7 +132,7 @@ if debug_mode {seconds=179;}
 
 seconds++;
 if seconds = 180{
-room_goto(room_menu);
+room_goto(room_disclaimer);
 }
 </string>
           </argument>

@@ -310,6 +310,7 @@
     <sprite>sprites\spr_next</sprite>
     <sprite>sprites\spr_last</sprite>
     <sprite>sprites\spr_finish</sprite>
+    <sprite>sprites\spr_disclaimer</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -400,6 +401,7 @@
     <font>fonts\font16</font>
     <font>fonts\font17</font>
     <font>fonts\font18</font>
+    <font>fonts\font19</font>
   </fonts>
   <objects name="objects">
     <objects name="Particle System">
@@ -569,6 +571,7 @@
     </objects>
     <object>objects\obj_desktopbar</object>
     <object>objects\obj_systembutton</object>
+    <object>objects\obj_disclaimer</object>
     <object>objects\obj_tabbrowser</object>
     <object>objects\obj_guibrowser</object>
     <object>objects\obj_tabmessenger</object>
@@ -605,6 +608,7 @@
   <rooms name="rooms">
     <rooms name="Engine">
       <room>rooms\room_omniqube</room>
+      <room>rooms\room_disclaimer</room>
       <room>rooms\rm_test</room>
     </rooms>
     <room>rooms\room_menu</room>
