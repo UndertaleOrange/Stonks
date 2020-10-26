@@ -373,6 +373,46 @@
         <script>scripts\array.gml</script>
       </scripts>
       <script>scripts\pctype.gml</script>
+      <scripts name="Math (2D)">
+        <script>scripts\pulse.gml</script>
+        <script>scripts\correct.gml</script>
+        <script>scripts\gain.gml</script>
+        <script>scripts\bias.gml</script>
+        <scripts name="Interpolation">
+          <script>scripts\spline.gml</script>
+          <script>scripts\spline4.gml</script>
+        </scripts>
+        <script>scripts\smoothstep.gml</script>
+      </scripts>
+      <scripts name="Math">
+        <scripts name="Probability">
+          <script>scripts\erf.gml</script>
+          <script>scripts\combination.gml</script>
+          <script>scripts\gauss.gml</script>
+          <script>scripts\exp_dist.gml</script>
+          <script>scripts\random_weighted.gml</script>
+          <script>scripts\roll_dice.gml</script>
+          <script>scripts\permutation.gml</script>
+        </scripts>
+        <script>scripts\is_even.gml</script>
+        <script>scripts\factorial.gml</script>
+        <script>scripts\lcm.gml</script>
+        <script>scripts\round_fixed.gml</script>
+        <script>scripts\is_power.gml</script>
+        <script>scripts\sum_interval.gml</script>
+        <script>scripts\is_factor.gml</script>
+        <script>scripts\gcd.gml</script>
+        <script>scripts\fibonacci.gml</script>
+      </scripts>
+      <script>scripts\toggle.gml</script>
+      <scripts name="Interaction">
+        <scripts name="Select">
+          <script>scripts\select_relative.gml</script>
+          <script>scripts\select_relative_wrap.gml</script>
+          <script>scripts\select.gml</script>
+          <script>scripts\select_index.gml</script>
+        </scripts>
+      </scripts>
     </scripts>
     <script>scripts\move_follow.gml</script>
     <script>scripts\jump_to_mouse.gml</script>
