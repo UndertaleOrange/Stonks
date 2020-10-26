@@ -77,10 +77,29 @@
     <extension index="0">extensions\Borderless Windowed</extension>
   </NewExtensions>
   <sounds name="sound">
-    <sound>sound\snd_sfx_rain</sound>
-    <sound>sound\snd_logo</sound>
-    <sound>sound\snd_message</sound>
     <sound>sound\snd_universal_pop</sound>
+    <sound>sound\snd_logo</sound>
+    <sounds name="Ambience">
+      <sound>sound\snd_sfx_night</sound>
+      <sound>sound\snd_sfx_wind</sound>
+      <sound>sound\snd_sfx_rain</sound>
+    </sounds>
+    <sounds name="OS">
+      <sound>sound\snd_error1</sound>
+      <sound>sound\snd_click2</sound>
+      <sound>sound\snd_error2</sound>
+      <sound>sound\snd_message</sound>
+      <sound>sound\snd_tone1</sound>
+      <sound>sound\snd_tone2</sound>
+      <sound>sound\snd_tone3</sound>
+      <sound>sound\snd_tone4</sound>
+    </sounds>
+    <sounds name="Computer">
+      <sound>sound\snd_keyboard1</sound>
+      <sound>sound\snd_mouse1</sound>
+      <sound>sound\snd_click1</sound>
+      <sound>sound\snd_click3</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Menu">
