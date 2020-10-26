@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="6" name="datafiles">
+  <datafiles number="8" name="datafiles">
     <datafile>
       <name>OmniQube_Publisher.cer</name>
       <exists>-1</exists>
@@ -202,8 +202,6 @@
       <sprite>sprites\spr_logo</sprite>
     </sprites>
     <sprites name="Memes">
-      <sprite>sprites\spr_misal2</sprite>
-      <sprite>sprites\spr_misal</sprite>
       <sprite>sprites\spr_fish</sprite>
       <sprite>sprites\spr_cloud</sprite>
     </sprites>
@@ -246,17 +244,6 @@
       <sprite>sprites\sprite150</sprite>
       <sprite>sprites\spr_loadingparticle</sprite>
       <sprite>sprites\spr_yes</sprite>
-    </sprites>
-    <sprites name="Concept">
-      <sprite>sprites\spr_mobileinauthor</sprite>
-      <sprite>sprites\spr_mobileinplaylist</sprite>
-      <sprite>sprites\spr_mobilehome</sprite>
-      <sprite>sprites\spr_nowplaying</sprite>
-      <sprite>sprites\spr_nowplay</sprite>
-      <sprite>sprites\spr_test</sprite>
-      <sprite>sprites\spr_home</sprite>
-      <sprite>sprites\spr_mobilesearch</sprite>
-      <sprite>sprites\spr_mobilelibrary</sprite>
     </sprites>
     <sprites name="Tutorial">
       <sprite>sprites\spr_tutorialback</sprite>
@@ -431,6 +418,42 @@
           <script>scripts\select.gml</script>
           <script>scripts\select_index.gml</script>
         </scripts>
+      </scripts>
+      <scripts name="GMMovie">
+        <script>scripts\GMMovie_Init.gml</script>
+        <script>scripts\GMMovie_Load.gml</script>
+        <script>scripts\GMMovie_Close.gml</script>
+        <script>scripts\GMMovie_Play.gml</script>
+        <script>scripts\GMMovie_Stop.gml</script>
+        <script>scripts\GMMovie_Pause.gml</script>
+        <script>scripts\GMMovie_Resume.gml</script>
+        <script>scripts\GMMovie_GetSeek.gml</script>
+        <script>scripts\GMMovie_Seek.gml</script>
+        <script>scripts\GMMovie_GetVolume.gml</script>
+        <script>scripts\GMMovie_SetVolume.gml</script>
+        <script>scripts\GMMovie_GetLength.gml</script>
+        <script>scripts\GMMovie_GetZoom.gml</script>
+        <script>scripts\GMMovie_SetZoom.gml</script>
+        <script>scripts\GMMovie_GetSize.gml</script>
+        <script>scripts\GMMovie_SetSize.gml</script>
+        <script>scripts\GMMovie_GetPosition.gml</script>
+        <script>scripts\GMMovie_SetPosition.gml</script>
+        <script>scripts\GMMovie_GetRepeat.gml</script>
+        <script>scripts\GMMovie_SetRepeat.gml</script>
+      </scripts>
+      <scripts name="b64">
+        <script>scripts\scr_b64_init.gml</script>
+        <script>scripts\scr_b64_enc.gml</script>
+        <script>scripts\scr_b64_dec.gml</script>
+        <script>scripts\scr_b64_enc_file.gml</script>
+        <script>scripts\scr_b64_dec_file.gml</script>
+      </scripts>
+      <scripts name="Taskbar">
+        <script>scripts\taskbar_init.gml</script>
+        <script>scripts\taskbar_deinit.gml</script>
+        <script>scripts\taskbar_sync.gml</script>
+        <script>scripts\taskbar_set.gml</script>
+        <script>scripts\taskbar_get.gml</script>
       </scripts>
     </scripts>
     <script>scripts\move_follow.gml</script>
