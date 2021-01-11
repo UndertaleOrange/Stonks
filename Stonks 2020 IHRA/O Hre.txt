@@ -1,0 +1,29 @@
+------------------------------------------------------ Stonks ------------------------------------------------------
+
+Táto verzia hry Stonks je ešte nedokončená, a slúži teda ako technologické demo. Funkcie môžu byť limitované,
+alebo môžu celkom chýbať.
+
+Stonks je simulačná hra, v ktorej je cieľom nakupovať akcie a firmy, a postupne vybudovať svoje peňažné zdroje.
+Z peňazí si budete môcť neskôr kupovať veci a investovať do nehnuteľností. Do hry plánujeme zakorporovať príbeh,
+ktorého udalosti majú dynamický zásah na akcie. Hráč si vyberá možnosti dialógu, a píše si s rôznymi osobami,
+aby posunul príbeh vpred. Hra je v retro 2.5D forme. 
+
+---------- TÍM: ----------
+
+ENGINE:
+Frederik Tóth
+Marek Fekete
+
+DESIGN:
+Matej Misál
+Samuel Bujňák
+Oliver Poliačik
+Lukáš Bašista
+
+Matej Šľachta
+Ladislav Takács
+
+---------------------------
+Súťažná kategória: S - stredné školy
+Súkromné Gymnázium Dneperská 1
+Prostredie: Game Maker: Studio verzia 1.4.9999

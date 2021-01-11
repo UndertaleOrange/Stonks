@@ -1,0 +1,17 @@
+[autorun]
+icon=STONKSICO.ico
+Label=Stonks
+;Open=StonksInstaller.exe
+ShellExecute=StonksInstaller.exe
+UseAutoPlay=0
+action=Stonks Installation Media
+CustomEvent=Stonks Installation Media
+[info]
+InstallType=Offline
+DriveType=RemovableMedia
+OS=Windows
+FileType=Included
+[publisherinfo]
+Owner=OmniQube Software
+CopyrightInfo=© 2019-2020
+Rights=All Rights reserved.
